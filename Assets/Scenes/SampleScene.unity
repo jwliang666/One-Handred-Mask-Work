@@ -134,6 +134,7 @@ GameObject:
   - component: {fileID: 1152484178}
   - component: {fileID: 1152484177}
   - component: {fileID: 1152484176}
+  - component: {fileID: 1152484179}
   m_Layer: 0
   m_Name: "\u53E3\u888B\u73CD\u94BB\u5B8C\u7F8E\u7D20\u6750\u5305-25_\u7231\u7ED9\u7F51_aigei_com_0"
   m_TagString: Untagged
@@ -229,6 +230,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1152484179
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1152484175}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e1605004dbc2fd74cb9947321a996866, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mHeroSpeed: 20
 --- !u!1 &2060289627
 GameObject:
   m_ObjectHideFlags: 0
