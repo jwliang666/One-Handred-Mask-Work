@@ -4,16 +4,16 @@ using UnityEngine;
 
 public class BombLauncher : MonoBehaviour
 {
-    public GameObject bombPrefab; // ĞèÒªÔÚUnity±à¼­Æ÷ÖĞÖ¸¶¨µÄÕ¨µ¯Ô¤ÖÆÌå
-    public GameObject hero; // Ä¿±ê¶ÔÏó£¨±ÈÈçÓ¢ĞÛ£©
-    public float launchInterval = 1f; // ·¢Éä¼ä¸ôÊ±¼ä
-    public float speed = 10f; // Õ¨µ¯µÄËÙ¶È
+    public GameObject bombPrefab; // éœ€è¦åœ¨Unityç¼–è¾‘å™¨ä¸­æŒ‡å®šçš„ç‚¸å¼¹é¢„åˆ¶ä½“
+    //public GameObject hero; // ç›®æ ‡å¯¹è±¡ï¼ˆæ¯”å¦‚è‹±é›„ï¼‰
+    public float launchInterval = 1f; // å‘å°„é—´éš”æ—¶é—´
+    public float speed = 10f; // ç‚¸å¼¹çš„é€Ÿåº¦
     public Vector3 targetPosition;
-
+    private GameObject hero;
     private float timer = 0f;
     void Start()
     {
-        Debug.Assert(hero != null);
+        hero = GameObject.Find("hero");
     }
 
     void Update()
@@ -36,16 +36,16 @@ public class BombLauncher : MonoBehaviour
             return;
         }
 
-        // »ñÈ¡µ±Ç° hero µÄÎ»ÖÃ
-    
+        // è·å–å½“å‰ hero çš„ä½ç½®
+
         Debug.Log(targetPosition);
-        // ¼ÆËãÕ¨µ¯µÄ·½Ïò
+        // è®¡ç®—ç‚¸å¼¹çš„æ–¹å‘
         Vector3 direction = (targetPosition - transform.position).normalized;
 
-        // ÊµÀı»¯Õ¨µ¯²¢ÉèÖÃÎ»ÖÃ
+        // å®ä¾‹åŒ–ç‚¸å¼¹å¹¶è®¾ç½®ä½ç½®
         GameObject bomb = Instantiate(bombPrefab, transform.position, Quaternion.identity);
 
-        // »ñÈ¡Õ¨µ¯ÉÏµÄ bombbehavior ×é¼ş£¬²¢ÉèÖÃËÙ¶ÈºÍ·½Ïò
+        // è·å–ç‚¸å¼¹ä¸Šçš„ bombbehavior ç»„ä»¶ï¼Œå¹¶è®¾ç½®é€Ÿåº¦å’Œæ–¹å‘
         bombbehavior bombBehavior = bomb.GetComponent<bombbehavior>();
         if (bombBehavior != null)
         {

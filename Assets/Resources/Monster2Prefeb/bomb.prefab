@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 408063307465059741}
   - component: {fileID: -7039659892196910315}
   - component: {fileID: -9171615144126263068}
-  - component: {fileID: -9212971372453581059}
+  - component: {fileID: 4331375878904149863}
   m_Layer: 0
   m_Name: bomb
   m_TagString: Untagged
@@ -135,7 +135,7 @@ CapsuleCollider2D:
   m_Offset: {x: 0, y: 0}
   m_Size: {x: 6, y: 9}
   m_Direction: 0
---- !u!50 &-9212971372453581059
+--- !u!50 &4331375878904149863
 Rigidbody2D:
   serializedVersion: 4
   m_ObjectHideFlags: 0
