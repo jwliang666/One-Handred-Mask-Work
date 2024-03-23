@@ -67,7 +67,7 @@ public class PlayerMove : MonoBehaviour
         {
             currentRotation.y = 1;
         }
-        else if (verticalSpeed == 0)
+        else if (verticalSpeed == 0 && horizontalSpeed != 0)
         {
             currentRotation.y = 0;
         }
@@ -80,7 +80,7 @@ public class PlayerMove : MonoBehaviour
         {
             currentRotation.x = 1;
         }
-        else if (horizontalSpeed == 0)
+        else if (horizontalSpeed == 0 && verticalSpeed != 0)
         {
             currentRotation.x = 0;
         }

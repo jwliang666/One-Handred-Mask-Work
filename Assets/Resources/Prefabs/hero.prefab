@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 6823327480673673693}
   - component: {fileID: 187863776796297169}
   - component: {fileID: 5070922887493382560}
+  - component: {fileID: 7139575707080054143}
   m_Layer: 0
   m_Name: hero
   m_TagString: Untagged
@@ -123,3 +124,16 @@ MonoBehaviour:
   coolDownSprintTime: 1.5
   currentCoolDownSprintTime: 1.8
   currentRotation: {x: 1, y: 0, z: 0}
+--- !u!114 &7139575707080054143
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 957559600615948707}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 551f4cecc23e7f7408cf855a2ae82ae7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  AttackType: 0
