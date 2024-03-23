@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6959378809337726190}
   - component: {fileID: 8949745428275072021}
-  - component: {fileID: 3715957812226653234}
+  - component: {fileID: 2921407387886666432}
   m_Layer: 0
   m_Name: Monster2
   m_TagString: Untagged
@@ -85,7 +85,7 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &3715957812226653234
+--- !u!114 &2921407387886666432
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -94,10 +94,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 417811711013156648}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7db977362a1ec334782a758c0663ef10, type: 3}
+  m_Script: {fileID: 11500000, guid: 17cf0b061ec267e40afae823d1f3a33e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   bombPrefab: {fileID: 3447512670101556972, guid: 034a820bf9a6fc649bf000cb10db1ba8, type: 3}
   hero: {fileID: 1913614807765081734, guid: 76d513e9938e23747a419364ab699c28, type: 3}
   launchInterval: 1
   speed: 10
+  targetPosition: {x: 0, y: 0, z: 0}
