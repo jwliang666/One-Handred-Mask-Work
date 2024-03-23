@@ -12,6 +12,7 @@ public class Monster1 : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        getMytarget();
         Debug.Assert(mMyTarget != null);
     }
 
@@ -23,6 +24,10 @@ public class Monster1 : MonoBehaviour
         transform.localPosition += kMySpeed * Time.smoothDeltaTime * transform.up;
     }
 
+    private void getMytarget()
+    {
+        mMyTarget = GameObject.Find("hero");
+    }
     private void PointAtPosition(Vector3 p, float r)
     {
         Vector3 v = p - transform.localPosition;

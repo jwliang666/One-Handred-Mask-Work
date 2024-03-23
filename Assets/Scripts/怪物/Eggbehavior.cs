@@ -38,18 +38,13 @@ public class EggBehavior : MonoBehaviour
         }
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
+    private void OnCollisionEnter2D(Collision2D collision)
     {
-        Debug.Log("Arrow: OnTriggerEnter2D");
-        if (collision.gameObject.tag == "Player")
+        string Tag = collision.gameObject.tag;
+        if (Tag == "Player")
         {
-            Destroy(transform.gameObject);  // kills self
-            //sGreenArrow.OneLessEgg();
+            Destroy(transform.gameObject);
         }
-    }
-
-    private void OnTriggerStay2D(Collider2D collision)
-    {
 
     }
 }

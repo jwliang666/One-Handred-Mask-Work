@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class Monster3 : MonoBehaviour
@@ -55,8 +56,19 @@ public class Monster3 : MonoBehaviour
     }
     public void xueliangjian()
     {
-        if (mon3xueliang > 0) mon3xueliang--;
+        if (mon3xueliang > 0 && !IfLittlePlaneliving()) 
+            mon3xueliang--;
     }
+
+    private bool IfLittlePlaneliving()
+    {
+        bool flag = true;
+        GameObject littlePlane = GameObject.Find("GreenUp");
+        if (littlePlane == null)
+            flag = false;
+        return flag;
+    }
+
     private void OnCollisionEnter2D(Collision2D collision)
     {
         string thisTag = gameObject.tag; // 获取当前游戏对象的标签

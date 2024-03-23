@@ -18,22 +18,17 @@ public class bombbehavior : MonoBehaviour
         }
     }
 
-    private void OnTriggerEnter(Collider other)
+
+    private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (other.CompareTag("Player"))
+        string Tag = collision.gameObject.tag;
+        if (Tag == "Player")
         {
-            Destroy(gameObject); // ������� Hero��������ը������
+             Destroy(transform.gameObject);
         }
+     
     }
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        Debug.Log("Arrow: OnTriggerEnter2D");
-        if (collision.gameObject.tag == "player")
-        {
-            Destroy(transform.gameObject);  // kills self
-            //sGreenArrow.OneLessEgg();
-        }
-    }
+
 
     private bool IsInCameraView()
     {

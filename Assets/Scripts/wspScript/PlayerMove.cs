@@ -21,6 +21,7 @@ public class PlayerMove : MonoBehaviour
     {
         wsadMove();
         sprintMove();
+        transform.rotation = Quaternion.Euler(0, 0, 0);
     }
 
     
