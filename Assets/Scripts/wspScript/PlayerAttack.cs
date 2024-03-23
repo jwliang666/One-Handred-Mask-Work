@@ -89,7 +89,6 @@ public class PlayerAttack : MonoBehaviour
                 Vector3 p = PlayerManage.getCurrentPlayerPosition();
                 p += PlayerManage.getCurrentPlayerRotation().x * PlayerManage.getCurrentPlayerSize().x * transform.right * PlayerAttack.attackDisPlayer * mul;
                 p += PlayerManage.getCurrentPlayerRotation().y * PlayerManage.getCurrentPlayerSize().y * transform.up * PlayerAttack.attackDisPlayer * mul;
-
                 currentWeapon = Instantiate(Resources.Load("Prefabs/deAttack") as GameObject, p, q, transform);
             } 
             attackDisTime -= attackCoolTime;
