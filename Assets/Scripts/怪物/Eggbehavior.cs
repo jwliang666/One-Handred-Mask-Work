@@ -41,7 +41,7 @@ public class EggBehavior : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {
         Debug.Log("Arrow: OnTriggerEnter2D");
-        if (collision.gameObject.name == "Plane(Clone)")
+        if (collision.gameObject.tag == "Player")
         {
             Destroy(transform.gameObject);  // kills self
             //sGreenArrow.OneLessEgg();
