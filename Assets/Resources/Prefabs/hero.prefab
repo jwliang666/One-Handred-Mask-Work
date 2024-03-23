@@ -12,7 +12,8 @@ GameObject:
   - component: {fileID: 5719539725548856208}
   - component: {fileID: 1762015793800698809}
   - component: {fileID: 6226625686938570220}
-  - component: {fileID: -3546910765916505244}
+  - component: {fileID: 8660892162556476652}
+  - component: {fileID: -5106822126734487990}
   m_Layer: 0
   m_Name: hero
   m_TagString: Player
@@ -159,7 +160,20 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &-3546910765916505244
+--- !u!114 &8660892162556476652
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1913614807765081734}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 551f4cecc23e7f7408cf855a2ae82ae7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  AttackType: 0
+--- !u!114 &-5106822126734487990
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -172,6 +186,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mHeroSpeed: 13
-  coolDownSprintTime: 1.5
-  sprintDistanceMul: 155
+  coolDownSprintTime: 1.8
+  currentCoolDownSprintTime: 1.8
   currentRotation: {x: 1, y: 0, z: 0}
