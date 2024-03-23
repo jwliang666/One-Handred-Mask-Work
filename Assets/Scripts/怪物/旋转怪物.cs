@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class OrbitControl : MonoBehaviour
 {
-    public float OrbitRadius = 5f;
+    public float OrbitRadius = 10f;
     public float OrbitSpeed = 360.0f / 10f; // 10 seconds per cycle
     public Transform HostXform = null;
 
