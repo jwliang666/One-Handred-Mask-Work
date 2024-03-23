@@ -22,7 +22,16 @@ public class bombbehavior : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            Destroy(gameObject); // Èç¹ûÅöµ½ Hero£¬ÔòÏú»ÙÕ¨µ¯¶ÔÏó
+            Destroy(gameObject); // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ Heroï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Õ¨ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+        }
+    }
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        Debug.Log("Arrow: OnTriggerEnter2D");
+        if (collision.gameObject.tag == "player")
+        {
+            Destroy(transform.gameObject);  // kills self
+            //sGreenArrow.OneLessEgg();
         }
     }
 

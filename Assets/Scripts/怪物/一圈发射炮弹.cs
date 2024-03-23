@@ -2,8 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class 一圈发射炮弹 : MonoBehaviour
+public class Monster3 : MonoBehaviour
 {
+    public int mon3xueliang = 10;
     private float spawnTimer = 0f;
     private float spawnInterval = 1f;
     float spawnRadius = 2.0f;
@@ -50,6 +51,32 @@ public class 一圈发射炮弹 : MonoBehaviour
                 // 记录生成的蛋
                 //mTotalEggCount++;
             }
+        }
+    }
+    public void xueliangjian()
+    {
+        if (mon3xueliang > 0) mon3xueliang--;
+    }
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        string thisTag = gameObject.tag; // 获取当前游戏对象的标签
+        string otherTag = collision.gameObject.tag; // 获取碰撞对象的标签
+
+        Debug.Log("Collision between tag: " + thisTag + " and " + otherTag);
+
+        // 检测两个刚体的标签
+        if (otherTag == "attack")
+        {
+            xueliangjian();
+            if (mon3xueliang <= 0)
+                Destroy(gameObject);
+            // 执行对应操作
+            Debug.Log("Collision between Tag1 and Tag2");
+        }
+        else if (thisTag == "Tag2" && otherTag == "Tag1")
+        {
+            // 执行对应操作
+            Debug.Log("Collision between Tag2 and Tag1");
         }
     }
 }
