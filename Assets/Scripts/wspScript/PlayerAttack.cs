@@ -8,11 +8,12 @@ public class PlayerAttack : MonoBehaviour
 {
     
     public int AttackType = 0;// 0==defaultAttack
-    public const float attackDisPlayer = 2f;//攻击与玩家的距离
+    public const float attackDisPlayer = 18f;//攻击与玩家的距离
     private PlayerManage PlayerManage;
     private GameObject currentWeapon;
     private const float attackCoolTime = 0.2f;//每0.2f可攻击一次
     private float attackDisTime = 0.2f;//>0.2f才能攻击，否则不能
+    private Shield Shield;
     void Start()
     {
         getPlayerManage();
@@ -25,8 +26,12 @@ public class PlayerAttack : MonoBehaviour
             Attack();
         attackTime();
     }
-   
 
+    private bool IfisDefencing()
+    {
+        Shield = GetComponent<Shield>();
+        return Shield.isDefencing;
+    }
     private void getPlayerManage()
     {
         GameObject PlayerManager = GameObject.Find("PlayerManage");
@@ -41,7 +46,7 @@ public class PlayerAttack : MonoBehaviour
     private void Attack()
     {
     
-        if (Input.GetKeyDown(KeyCode.J))
+        if (Input.GetKeyDown(KeyCode.J) && !IfisDefencing())
         {
             if(AttackType == 0)
             {
@@ -89,7 +94,7 @@ public class PlayerAttack : MonoBehaviour
                 Vector3 p = PlayerManage.getCurrentPlayerPosition();
                 p += PlayerManage.getCurrentPlayerRotation().x * PlayerManage.getCurrentPlayerSize().x * transform.right * PlayerAttack.attackDisPlayer * mul;
                 p += PlayerManage.getCurrentPlayerRotation().y * PlayerManage.getCurrentPlayerSize().y * transform.up * PlayerAttack.attackDisPlayer * mul;
-                currentWeapon = Instantiate(Resources.Load("Prefabs/deAttack") as GameObject, p, q, transform);
+                Instantiate(Resources.Load("Prefabs/deAttack") as GameObject, p, q);
             } 
             attackDisTime -= attackCoolTime;
         }

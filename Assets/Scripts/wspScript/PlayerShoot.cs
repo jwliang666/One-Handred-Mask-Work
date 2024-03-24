@@ -84,9 +84,9 @@ public class PlayerShoot : MonoBehaviour
                 int z2 = z - 20;
                 Quaternion q1 = Quaternion.Euler(0, 0, z1);
                 Quaternion q2 = Quaternion.Euler(0, 0, z2);
-                Instantiate(Resources.Load("Prefabs/deShoot") as GameObject, p, q, transform);
-                Instantiate(Resources.Load("Prefabs/deShoot") as GameObject, p, q1, transform);
-                Instantiate(Resources.Load("Prefabs/deShoot") as GameObject, p, q2, transform);
+                Instantiate(Resources.Load("Prefabs/deShoot") as GameObject, p, q);
+                Instantiate(Resources.Load("Prefabs/deShoot") as GameObject, p, q1);
+                Instantiate(Resources.Load("Prefabs/deShoot") as GameObject, p, q2);
 
             }
             ShootDisTime -= ShootCoolTime;

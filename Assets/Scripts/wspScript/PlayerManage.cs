@@ -32,11 +32,7 @@ public class PlayerManage : MonoBehaviour
     {
         GameObject hero = GameObject.Find("hero");
         BoxCollider2D collider = hero.GetComponent<BoxCollider2D>();
-        Vector3 size = Vector3.zero;
-        if (collider != null)
-        {
-            size = collider.size;
-        }
+        Vector3 size = collider.size;
         return size;
     }
 }

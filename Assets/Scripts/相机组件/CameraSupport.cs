@@ -8,6 +8,13 @@ public class CameraSupport : MonoBehaviour
     private Camera mTheCamera;   // Will find this on the gameObject
     private Bounds mWorldBound;  // Computed bound from the camera
 
+    public Transform target; // 要跟随的目标对象（人物）
+    public float smoothSpeed = 0.125f; // 相机跟随的平滑度
+
+    public float zoomSpeed = 50f; // 缩放速度
+    public float minSize = 1f; // 最小视角大小
+    public float maxSize = 10f; // 最大视角大小
+
     public enum WorldBoundStatus
     {
         Outside = 0,
@@ -35,6 +42,16 @@ public class CameraSupport : MonoBehaviour
     void Update()
     {
         UpdateWorldWindowBound();
+        if (Input.GetKey(KeyCode.U))
+        {
+            ZoomCamera(-zoomSpeed * Time.deltaTime);
+        }
+
+        // 减小视角
+        if (Input.GetKey(KeyCode.I))
+        {
+            ZoomCamera(zoomSpeed * Time.deltaTime);
+        }
     }
 
     public Bounds GetWorldBound() { return mWorldBound; }
@@ -95,6 +112,37 @@ public class CameraSupport : MonoBehaviour
         }
 
         return status;
+    }
+
+    void LateUpdate()
+    {
+        if (target != null)
+        {
+            // 计算目标对象的位置
+            Vector3 desiredPosition = new Vector3(target.position.x, target.position.y, transform.position.z);
+
+            // 使用 SmoothDamp 函数使相机位置平滑过渡到目标位置
+            Vector3 smoothedPosition = Vector3.Lerp(transform.position, desiredPosition, smoothSpeed);
+
+            // 设置相机的位置为平滑后的位置
+            transform.position = smoothedPosition;
+        }
+    }
+
+
+
+    void ZoomCamera(float increment)
+    {
+        Camera mainCamera = GetComponent<Camera>(); // 获取相机组件
+        if (mainCamera != null)
+        {
+            // 调整相机的视角大小
+            mainCamera.orthographicSize = Mathf.Clamp(mainCamera.orthographicSize + increment, minSize, maxSize);
+        }
+        else
+        {
+            Debug.LogWarning("No Camera component found on this object.");
+        }
     }
 
     #endregion
