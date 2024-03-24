@@ -5,7 +5,6 @@ using UnityEngine;
 public class Shield : MonoBehaviour
 {
     // Start is called before the first frame update
-    private Rigidbody2D rb2d;
     public bool isDefencing = false;
     private PlayerMove PlayerMove;
     private float delayTimeCnt = 0f;
@@ -13,7 +12,6 @@ public class Shield : MonoBehaviour
 
     void Start()
     {
-        rb2d = GetComponent<Rigidbody2D>();
         boxCollider2D = GetComponent<BoxCollider2D>();
     }
 
@@ -34,14 +32,12 @@ public class Shield : MonoBehaviour
         }
         if (Input.GetKey(KeyCode.Space) && !isDefencing && delayTimeCnt > 0.5f)
         {
-            rb2d.mass *= 100;
             PlayerMove.mHeroSpeed *= 0.1f;
             boxCollider2D.size *= new Vector2(2f, 2f);
             isDefencing = true; // 标记空格键被按下
         }
         else if (!Input.GetKey(KeyCode.Space) && isDefencing)
         {
-            rb2d.mass /= 100;
             PlayerMove.mHeroSpeed *= 10f;
             boxCollider2D.size /= new Vector2(2f, 2f);
             isDefencing = false; // 标记空格键松开
