@@ -38,7 +38,7 @@ public class Monster1 : MonoBehaviour
         transform.up = Vector3.LerpUnclamped(transform.up, v, r);
     }
 
-    void OnTriggerEnter(Collider other)
+    void OnTriggerEnter2D(Collider2D other)
     {
         Debug.Log("pengpengpenpgnepng");
         if (other.gameObject.tag == "attack")
@@ -50,4 +50,5 @@ public class Monster1 : MonoBehaviour
             mon1xueliang -= 1;
         }
     }
+
 }

@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Monster2 : MonoBehaviour
 {
-    public int mon2xueliang = 5;
+    public int mon2xueliang = 8;
     public GameObject bombPrefab; // 需要在Unity编辑器中指定的炸弹预制体
     //public GameObject hero; // 目标对象（比如英雄）
     public float launchInterval = 1f; // 发射间隔时间
@@ -27,6 +27,9 @@ public class Monster2 : MonoBehaviour
             LaunchBomb();
             timer = 0f;
         }
+
+        if (mon2xueliang <= 0)
+            Destroy(gameObject);
     }
 
     void LaunchBomb()
@@ -58,31 +61,18 @@ public class Monster2 : MonoBehaviour
         }
 
     }
-    public void xueliangjian()
-    {
-        if (mon2xueliang > 0)
-            mon2xueliang--;
-    }
-    private void OnCollisionEnter2D(Collision2D collision)
-    {
-        string thisTag = gameObject.tag; // 获取当前游戏对象的标签
-        string otherTag = collision.gameObject.tag; // 获取碰撞对象的标签
 
-        Debug.Log("Collision between tag: " + thisTag + " and " + otherTag);
 
-        // 检测两个刚体的标签
-        if (otherTag == "attack" || otherTag == "playBullet")
+    void OnTriggerEnter2D(Collider2D other)
+    {
+        Debug.Log("pengpengpenpgnepng");
+        if (other.gameObject.tag == "attack")
         {
-            xueliangjian();
-            if (mon2xueliang <= 0)
-                Destroy(gameObject);
-            // 执行对应操作
-            Debug.Log("Collision between Tag1 and Tag2");
+            mon2xueliang -= 4;
         }
-        else if (thisTag == "Tag2" && otherTag == "Tag1")
+        else if (other.gameObject.tag == "playerBullet")
         {
-            // 执行对应操作
-            Debug.Log("Collision between Tag2 and Tag1");
+            mon2xueliang -= 1;
         }
     }
 }

@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class Monster3 : MonoBehaviour
 {
-    public int mon3xueliang = 10;
+    public int mon3xueliang = 12;
     private float spawnTimer = 0f;
     private float spawnInterval = 1f;
     float spawnRadius = 2.0f;
@@ -24,9 +24,11 @@ public class Monster3 : MonoBehaviour
             luoxuanegg();
         else
             tongshiegg();
-
         // 当计时器大于等于生成间隔时生成蛋并重置计时器
 
+
+        if (mon3xueliang <= 0)
+            Destroy(gameObject);
     }
     private void luoxuanegg()
     {
@@ -115,11 +117,6 @@ public class Monster3 : MonoBehaviour
         }
 
     }
-    public void xueliangjian()
-    {
-        if (mon3xueliang > 0 && !IfLittlePlaneliving())
-            mon3xueliang--;
-    }
 
     private bool IfLittlePlaneliving()
     {
@@ -130,26 +127,16 @@ public class Monster3 : MonoBehaviour
         return flag;
     }
 
-    private void OnCollisionEnter2D(Collision2D collision)
+    void OnTriggerEnter2D(Collider2D other)
     {
-        string thisTag = gameObject.tag; // 获取当前游戏对象的标签
-        string otherTag = collision.gameObject.tag; // 获取碰撞对象的标签
-
-        Debug.Log("Collision between tag: " + thisTag + " and " + otherTag);
-
-        // 检测两个刚体的标签
-        if (otherTag == "attack" || otherTag == "playBullet")
+        Debug.Log("pengpengpenpgnepng");
+        if (other.gameObject.tag == "attack")
         {
-            xueliangjian();
-            if (mon3xueliang <= 0)
-                Destroy(gameObject);
-            // 执行对应操作
-            Debug.Log("Collision between Tag1 and Tag2");
+            mon3xueliang -= 4;
         }
-        else if (thisTag == "Tag2" && otherTag == "Tag1")
+        else if (other.gameObject.tag == "playerBullet")
         {
-            // 执行对应操作
-            Debug.Log("Collision between Tag2 and Tag1");
+            mon3xueliang -= 1;
         }
     }
 }
