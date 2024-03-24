@@ -24,12 +24,12 @@ public class heroInjured : MonoBehaviour
     private void OnCollisionEnter2D(Collision2D collision)
     {
         string Tag = collision.gameObject.tag;
-        Debug.Log("pengpengpengpengpengepng");
+        
         if (!IfisDefencing())
         {
             if (Tag == "Enemy")
             {
-                Debug.Log("pengpengpeng");
+                
                 healthCnt -= 20;
             }
             if (Tag == "Bullet")
