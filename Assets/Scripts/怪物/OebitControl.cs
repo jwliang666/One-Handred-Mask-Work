@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class OrbitControl : MonoBehaviour
 {
-    public int mon4xueliang = 5;
+    public int mon4xueliang = 6;
     public float OrbitRadius = 10f;
     public float OrbitSpeed = 360.0f / 10f; // 10 seconds per cycle
     public Transform HostXform = null;
@@ -27,35 +27,23 @@ public class OrbitControl : MonoBehaviour
         // update our rotation (sattlite will rotate)
         Quaternion r = Quaternion.AngleAxis((OrbitSpeed * Time.smoothDeltaTime), Vector3.forward);
         transform.rotation = r * transform.rotation;
+
+        if (mon4xueliang <= 0)
+            Destroy(gameObject);
     }
 
-    public void xueliangjian()
+    void OnTriggerEnter2D(Collider2D other)
     {
-        if (mon4xueliang > 0)
-            mon4xueliang--;
-    }
-
-    private void OnCollisionEnter2D(Collision2D collision)
-    {
-        string thisTag = gameObject.tag; // 获取当前游戏对象的标签
-        string otherTag = collision.gameObject.tag; // 获取碰撞对象的标签
-
-        Debug.Log("Collision between tag: " + thisTag + " and " + otherTag);
-
-        // 检测两个刚体的标签
-        if (otherTag == "attack" || otherTag == "playBullet")
+        Debug.Log("pengpengpenpgnepng");
+        if (other.gameObject.tag == "attack")
         {
-            xueliangjian();
-            if (mon4xueliang <= 0)
-                Destroy(gameObject);
-            // 执行对应操作
-            Debug.Log("Collision between Tag1 and Tag2");
+            mon4xueliang -= 4;
         }
-        else if (thisTag == "Tag2" && otherTag == "Tag1")
+        else if (other.gameObject.tag == "playerBullet")
         {
-            // 执行对应操作
-            Debug.Log("Collision between Tag2 and Tag1");
+            mon4xueliang -= 1;
         }
     }
+
 
 }

@@ -6,7 +6,7 @@ public class deAttack : MonoBehaviour
 {
     // Start is called before the first frame update
     
-    private float livingTime = 1f;
+    private float livingTime = 0.2f;
     private PlayerManage PlayerManage;
     private PlayerAttack PlayerAttack;
     private Transform PlayerTransform;
