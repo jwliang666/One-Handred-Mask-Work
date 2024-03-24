@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: -383913650154107507}
   - component: {fileID: 6552182789675114165}
   - component: {fileID: 443195408890625043}
+  - component: {fileID: -4207795937976921577}
   m_Layer: 0
   m_Name: "Monster1\u52A8\u753B"
   m_TagString: Enemy
@@ -186,3 +187,15 @@ MonoBehaviour:
   mon1xueliang: 10
   mMyTarget: {fileID: 0}
   mTurnRate: 0.05
+--- !u!114 &-4207795937976921577
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3574999887114307561}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be4f8e692498e674cb3c9bc55c59124d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
