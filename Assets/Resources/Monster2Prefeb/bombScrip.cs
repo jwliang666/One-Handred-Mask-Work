@@ -18,13 +18,17 @@ public class bombbehavior : MonoBehaviour
         }
     }
 
-    private void OnTriggerEnter(Collider other)
+
+    private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (other.CompareTag("Player"))
+        string Tag = collision.gameObject.tag;
+        if (Tag == "Player")
         {
-            Destroy(gameObject); // 如果碰到 Hero，则销毁炸弹对象
+             Destroy(transform.gameObject);
         }
+     
     }
+
 
     private bool IsInCameraView()
     {
