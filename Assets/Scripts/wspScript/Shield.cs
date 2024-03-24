@@ -26,20 +26,23 @@ public class Shield : MonoBehaviour
     {
         GameObject hero = GameObject.Find("hero");
         PlayerMove = hero.GetComponent<PlayerMove>();
+        Vector3 oriSize = boxCollider2D.size;
         if (Input.GetKey(KeyCode.Space))
         {
+            if(delayTimeCnt == 0f)
+                Instantiate(Resources.Load("Prefabs/ShieldHalo") as GameObject, transform);
             delayTimeCnt += Time.deltaTime;
         }
         if (Input.GetKey(KeyCode.Space) && !isDefencing && delayTimeCnt > 0.5f)
         {
             PlayerMove.mHeroSpeed *= 0.1f;
-            boxCollider2D.size *= new Vector2(2f, 2f);
+            boxCollider2D.size *= new Vector2(2.3f, 2.3f);
             isDefencing = true; // 标记空格键被按下
         }
         else if (!Input.GetKey(KeyCode.Space) && isDefencing)
         {
             PlayerMove.mHeroSpeed *= 10f;
-            boxCollider2D.size /= new Vector2(2f, 2f);
+            boxCollider2D.size /= new Vector2(2.3f, 2.3f);
             isDefencing = false; // 标记空格键松开
             delayTimeCnt = 0f;
         }

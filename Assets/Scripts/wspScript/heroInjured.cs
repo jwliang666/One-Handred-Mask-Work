@@ -29,13 +29,14 @@ public class heroInjured : MonoBehaviour
         {
             if (Tag == "Enemy")
             {
-                
                 healthCnt -= 20;
             }
             if (Tag == "Bullet")
             {
                 healthCnt -= 15;
             }
-        }   
+        }
+        if (healthCnt <= 0)
+            Destroy(gameObject);
     }
 }
