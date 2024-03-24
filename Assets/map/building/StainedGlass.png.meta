@@ -48,7 +48,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 25
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -126,10 +126,10 @@ TextureImporter:
       name: StainedGlass_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 288
-        width: 272
-        height: 144
+        x: 25
+        y: 407
+        width: 25
+        height: 25
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -147,10 +147,10 @@ TextureImporter:
       name: StainedGlass_1
       rect:
         serializedVersion: 2
-        x: 0
-        y: 144
-        width: 272
-        height: 144
+        x: 50
+        y: 407
+        width: 25
+        height: 25
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -168,10 +168,10 @@ TextureImporter:
       name: StainedGlass_2
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 272
-        height: 144
+        x: 75
+        y: 407
+        width: 25
+        height: 25
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -181,6 +181,2211 @@ TextureImporter:
       bones: []
       spriteID: 784719b6b81fb764fb31bd8e75427b37
       internalID: -1415836236
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StainedGlass_3
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 407
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1cc1b8f0518877499873c57195f5dbf
+      internalID: -313395827
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StainedGlass_4
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 407
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80763948fd34e0b4abcfd97543410756
+      internalID: 1828180489
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StainedGlass_5
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 382
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4b00e0729b6a284b8e89bd8525a3ff3
+      internalID: -617662289
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StainedGlass_6
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 382
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d26822c54536c2a4a80a077d57e97f85
+      internalID: 225804706
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StainedGlass_7
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 382
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 247215fae583b804dbe1c4b1a390773d
+      internalID: -2133660593
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StainedGlass_8
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 382
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ce1633881ff569459e0361babfc77b6
+      internalID: 503689781
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StainedGlass_9
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 382
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 447c5dd8001dc914091693c37dc05682
+      internalID: -2070652877
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StainedGlass_10
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 357
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f71e1a26b71e8741b213fdf5313a83c
+      internalID: -162056517
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StainedGlass_11
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 357
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b056e9cbb45061d45ba499b8dd78dca4
+      internalID: -1903946096
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StainedGlass_12
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 357
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3fff783cf9fc6b346956158dc87a0c10
+      internalID: 1445980586
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StainedGlass_13
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 357
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 558ecd32090d5ae469b1c30f17058c58
+      internalID: 430232942
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StainedGlass_14
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 357
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3335e16f477628345ba0d6f01ab6df7b
+      internalID: 809402923
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StainedGlass_15
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 357
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26e0c29d347ea5a48922bff00731a462
+      internalID: 1906583721
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StainedGlass_16
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 332
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fcb39467d85895740b5961bbae7a154d
+      internalID: -606023644
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StainedGlass_17
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 332
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d4efefc311bd7046aa593bf3116bed3
+      internalID: 1466797712
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StainedGlass_18
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 332
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82f14b3ea8d1d3d40a2dbfa957e8483e
+      internalID: 841771655
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StainedGlass_19
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 332
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0d58e9628bd57a4d9532d6f04a87b34
+      internalID: 2064773791
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StainedGlass_20
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 332
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2db1456d753be845849cdb8c49f8d8c
+      internalID: 1279913323
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StainedGlass_21
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 332
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 551ed0a079097e5499a79be29d30c1c3
+      internalID: -280272270
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StainedGlass_22
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 332
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ffe5130a033f8244eb6cbd0072fea980
+      internalID: -921523678
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StainedGlass_23
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 307
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 805157be826c90d489fad4e7723fef69
+      internalID: -1454250785
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StainedGlass_24
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 307
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 375d7eb3da9d5634d97f43830e0ba925
+      internalID: -1883966973
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StainedGlass_25
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 307
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e394dd2eb000d8b4a97c967490cb0a4e
+      internalID: -1496260162
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StainedGlass_26
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 307
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d938151554cc2c48a77ec9d7fb66306
+      internalID: -1482433944
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StainedGlass_27
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 307
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7f82ec123bfd334f8363c0609a0c285
+      internalID: 1442499525
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StainedGlass_28
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 307
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 798e94198a657494aa1603f501cdc188
+      internalID: -943072071
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StainedGlass_29
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 307
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ead161d55611634985e874cc2226d6d
+      internalID: 1725652517
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StainedGlass_30
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 282
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ffbc6f4d8f08c36478df272742a2fb78
+      internalID: -1913243060
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StainedGlass_31
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 282
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42fbc89ec899e1d4fa2e478b2c6295cc
+      internalID: -1254080343
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StainedGlass_32
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 282
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72d157a87ac0c754fb57bd008aaf882d
+      internalID: 1193352287
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StainedGlass_33
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 282
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 136d38b7028393e4fbd0c1857e3d7032
+      internalID: 2020900009
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StainedGlass_34
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 282
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 252c60fc40ac8d34a8eaa0a76fca432b
+      internalID: -575075878
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StainedGlass_35
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 282
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23102c510f971d24a909959895f10f18
+      internalID: 1023285201
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StainedGlass_36
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 282
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db4e77a2e61aa1e49aae3dd104019aee
+      internalID: -410609926
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StainedGlass_37
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 257
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9125c337c568f5f41a15bf8af5e02c5b
+      internalID: 798834123
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StainedGlass_38
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 257
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 799638c31d970c24498dc46398ede402
+      internalID: 258847079
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StainedGlass_39
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 257
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32816ecf99b0d79489b65038fbf38c0d
+      internalID: -148242951
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StainedGlass_40
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 257
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d7b2089bb6abf744abfda925dbc5d64
+      internalID: 1462962583
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StainedGlass_41
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 257
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b71f73618b4acb34b870f8294e6f8d5b
+      internalID: -1481410316
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StainedGlass_42
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 232
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 215294031c9975e4d930905c099fcc0f
+      internalID: 539939866
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StainedGlass_43
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 232
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82de4cd87f39fd1428bf3a83f0954198
+      internalID: -2095431502
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StainedGlass_44
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 232
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4898c41a68e73a4eb4954c0dadfcc8a
+      internalID: -788805528
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StainedGlass_45
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 232
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5cf20905980a7384485cd59b72196ceb
+      internalID: 1674629083
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StainedGlass_46
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 232
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5424d3e2eeed3b046be493bd0f7e2f92
+      internalID: -995830687
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StainedGlass_47
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 207
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d2af80d7da9e0348b40490a3c23b7dc
+      internalID: 503740892
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StainedGlass_48
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 207
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aecea3a6bc587e1409f893503ca3db40
+      internalID: -664828414
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StainedGlass_49
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 207
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5f2620b1ec59404d9cfa2c5a93c5e9e
+      internalID: 154267569
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StainedGlass_50
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 207
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47fe03657568642498561b04f454c7b4
+      internalID: 323398601
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StainedGlass_51
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 207
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72a7d86a1ba8d534ca9b5c3e2c8f18a7
+      internalID: -1425494572
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StainedGlass_52
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 207
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c80ffd5003535d646a86d17c12da5e25
+      internalID: -943494157
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StainedGlass_53
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 207
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8613f4cb12a03a24c9e289b533214382
+      internalID: -1232418042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StainedGlass_54
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 182
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: adf8ca5243356e24ba598e84d420f42e
+      internalID: -23681460
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StainedGlass_55
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 182
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3219fd47793ccb94d9390d22903d3b6b
+      internalID: -2020593120
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StainedGlass_56
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 182
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dbc7d6a84dcf72b47aa61f8cd2ed8ed7
+      internalID: 1644317403
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StainedGlass_57
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 182
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 915623fa4d876ba4db9270b0ffcb1ce5
+      internalID: -1756441697
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StainedGlass_58
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 182
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aca3fdadf9395b545ae7ec46e8f7f223
+      internalID: -1560886046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StainedGlass_59
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 182
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c87de1a5567592447af331c6b0fe2cce
+      internalID: -1863662831
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StainedGlass_60
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 182
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 482793b3c6483e4489f65b03739be628
+      internalID: 417908439
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StainedGlass_61
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 157
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bda2caed39c59ec4983069ec630eabd7
+      internalID: -202337113
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StainedGlass_62
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 157
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7cbb15c1dec1e74eb3ac833a1b31b00
+      internalID: -1780044782
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StainedGlass_63
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 157
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84c00efd6763c2b4bafdc1ec662ef09e
+      internalID: 688990191
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StainedGlass_64
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 157
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 868e1da2adf864344988262f53c12814
+      internalID: -1954619949
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StainedGlass_65
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 157
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25b4f85e7820a7a4a94de1394ef0a77b
+      internalID: 654761171
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StainedGlass_66
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 157
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e99046207dc682418bbf2a10f2cd163
+      internalID: 2074120053
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StainedGlass_67
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 157
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25ef4ce4d407d3d44a8903c42b17315e
+      internalID: -1060124255
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StainedGlass_68
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 132
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a66a8f3699674ef438db81f950bc6351
+      internalID: 2109488265
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StainedGlass_69
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 132
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76b8408ef78c83a44ba4ce40ac4df569
+      internalID: 424958602
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StainedGlass_70
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 132
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de8a70bc05d23c2498093cc0f90a6498
+      internalID: 456850435
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StainedGlass_71
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 132
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b9b6b1488989c0469d99f86864ca939
+      internalID: 481748009
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StainedGlass_72
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 132
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 326a1f9b6fae7654c853b1035ba43d62
+      internalID: 690439176
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StainedGlass_73
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 132
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91b18977892f5134898763d9b7c454aa
+      internalID: -894939946
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StainedGlass_74
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 132
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89f2564636f14aa44915e10f3f67cee9
+      internalID: -76003076
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StainedGlass_75
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 107
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1975c2c44857cd74d9a4ff6ba8009105
+      internalID: -1809441486
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StainedGlass_76
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 107
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0148678d5eeff9a448d7e22ae6c3578d
+      internalID: -31458849
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StainedGlass_77
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 107
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5d39fa10b451c84bbdedf78d3739dd6
+      internalID: 1728955845
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StainedGlass_78
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 107
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e054fa23ac177e2459347477a7189545
+      internalID: 1836820991
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StainedGlass_79
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 107
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b41cf6451c7ada40aac0703ce58eaf2
+      internalID: 1242168350
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StainedGlass_80
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 107
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15c12d795031043418dd07549d05cdea
+      internalID: 2069416124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StainedGlass_81
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 82
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33cc2442239069e40bb45bb87a3079df
+      internalID: -690413638
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StainedGlass_82
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 82
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2316417ef02674c458339de7a4f8dacd
+      internalID: 1899474878
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StainedGlass_83
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 82
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e4a0c5a9fb15194cb9335100c2a2091
+      internalID: 380248756
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StainedGlass_84
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 82
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1d2098c8241d6b4abcbcf70578c3c43
+      internalID: -1448082275
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StainedGlass_85
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 82
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 700998c4ec767ed44876d91ad04b8721
+      internalID: -254225764
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StainedGlass_86
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 82
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 754a5fec12d5348439ed15ac9ce43915
+      internalID: 1960069332
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StainedGlass_87
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 57
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9ae51b223e04e14a8beb35175a81e6c
+      internalID: -2140028372
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StainedGlass_88
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 57
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5103a95fbee1917498b7659c77528912
+      internalID: 1547381896
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StainedGlass_89
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 57
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19239fa1e98519d4f9527e8d15f73368
+      internalID: 2010775881
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StainedGlass_90
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 57
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f176ebb7948e154ba7a1626694e7e2c
+      internalID: 302453719
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StainedGlass_91
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 57
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4325953abe6ec9409b63e3609448703
+      internalID: -1084126088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StainedGlass_92
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 57
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33449c8ca36336b439cfcd278db7d8c3
+      internalID: -383535542
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StainedGlass_93
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 57
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23fd5a6e1c179074a84af073c9e29150
+      internalID: 1038994461
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StainedGlass_94
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 32
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6989748856db5f24fa43bee1160b84d5
+      internalID: 1596068145
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StainedGlass_95
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 32
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1acf87400d737ab4e99260822ccc1441
+      internalID: 768795865
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StainedGlass_96
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 32
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c5a02a07d99b8c4883f47cadb663e55
+      internalID: 1858133950
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StainedGlass_97
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 32
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2cd3cdcf670de32439238bb845f7c28d
+      internalID: 1900290743
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StainedGlass_98
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 32
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 490619fb4bb6771439bce1b6ee665932
+      internalID: 1814014441
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StainedGlass_99
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 32
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad666df49ad07df48a1b6fe0b62b084a
+      internalID: 47118208
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StainedGlass_100
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 32
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fbcb4dbffcb12b541942258db9e64c30
+      internalID: -1112926302
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StainedGlass_101
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 7
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4fd01f4399100b4e86d3fbce6231abd
+      internalID: -1872715352
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StainedGlass_102
+      rect:
+        serializedVersion: 2
+        x: 25
+        y: 7
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c3ce3f9182526149a33b05abca843b0
+      internalID: 18718535
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StainedGlass_103
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 7
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e89d409e6c7c0d44a80ce8db5291b49e
+      internalID: -198851753
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StainedGlass_104
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 7
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f80ac2e0eaa60674a828e6993eff4d85
+      internalID: 1494406852
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StainedGlass_105
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 7
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 314951eb447303c4981a1a4d314bf164
+      internalID: 335439125
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StainedGlass_106
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 7
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07fb128d8c8a15f42903cbb0b8384648
+      internalID: 2010940297
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: StainedGlass_107
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 7
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 87b2b23210ec3b046a379b7a84915633
+      internalID: -1892558129
       vertices: []
       indices: 
       edges: []
@@ -198,7 +2403,112 @@ TextureImporter:
     nameFileIdTable:
       StainedGlass_0: 1642206632
       StainedGlass_1: -71553878
+      StainedGlass_10: -162056517
+      StainedGlass_100: -1112926302
+      StainedGlass_101: -1872715352
+      StainedGlass_102: 18718535
+      StainedGlass_103: -198851753
+      StainedGlass_104: 1494406852
+      StainedGlass_105: 335439125
+      StainedGlass_106: 2010940297
+      StainedGlass_107: -1892558129
+      StainedGlass_11: -1903946096
+      StainedGlass_12: 1445980586
+      StainedGlass_13: 430232942
+      StainedGlass_14: 809402923
+      StainedGlass_15: 1906583721
+      StainedGlass_16: -606023644
+      StainedGlass_17: 1466797712
+      StainedGlass_18: 841771655
+      StainedGlass_19: 2064773791
       StainedGlass_2: -1415836236
+      StainedGlass_20: 1279913323
+      StainedGlass_21: -280272270
+      StainedGlass_22: -921523678
+      StainedGlass_23: -1454250785
+      StainedGlass_24: -1883966973
+      StainedGlass_25: -1496260162
+      StainedGlass_26: -1482433944
+      StainedGlass_27: 1442499525
+      StainedGlass_28: -943072071
+      StainedGlass_29: 1725652517
+      StainedGlass_3: -313395827
+      StainedGlass_30: -1913243060
+      StainedGlass_31: -1254080343
+      StainedGlass_32: 1193352287
+      StainedGlass_33: 2020900009
+      StainedGlass_34: -575075878
+      StainedGlass_35: 1023285201
+      StainedGlass_36: -410609926
+      StainedGlass_37: 798834123
+      StainedGlass_38: 258847079
+      StainedGlass_39: -148242951
+      StainedGlass_4: 1828180489
+      StainedGlass_40: 1462962583
+      StainedGlass_41: -1481410316
+      StainedGlass_42: 539939866
+      StainedGlass_43: -2095431502
+      StainedGlass_44: -788805528
+      StainedGlass_45: 1674629083
+      StainedGlass_46: -995830687
+      StainedGlass_47: 503740892
+      StainedGlass_48: -664828414
+      StainedGlass_49: 154267569
+      StainedGlass_5: -617662289
+      StainedGlass_50: 323398601
+      StainedGlass_51: -1425494572
+      StainedGlass_52: -943494157
+      StainedGlass_53: -1232418042
+      StainedGlass_54: -23681460
+      StainedGlass_55: -2020593120
+      StainedGlass_56: 1644317403
+      StainedGlass_57: -1756441697
+      StainedGlass_58: -1560886046
+      StainedGlass_59: -1863662831
+      StainedGlass_6: 225804706
+      StainedGlass_60: 417908439
+      StainedGlass_61: -202337113
+      StainedGlass_62: -1780044782
+      StainedGlass_63: 688990191
+      StainedGlass_64: -1954619949
+      StainedGlass_65: 654761171
+      StainedGlass_66: 2074120053
+      StainedGlass_67: -1060124255
+      StainedGlass_68: 2109488265
+      StainedGlass_69: 424958602
+      StainedGlass_7: -2133660593
+      StainedGlass_70: 456850435
+      StainedGlass_71: 481748009
+      StainedGlass_72: 690439176
+      StainedGlass_73: -894939946
+      StainedGlass_74: -76003076
+      StainedGlass_75: -1809441486
+      StainedGlass_76: -31458849
+      StainedGlass_77: 1728955845
+      StainedGlass_78: 1836820991
+      StainedGlass_79: 1242168350
+      StainedGlass_8: 503689781
+      StainedGlass_80: 2069416124
+      StainedGlass_81: -690413638
+      StainedGlass_82: 1899474878
+      StainedGlass_83: 380248756
+      StainedGlass_84: -1448082275
+      StainedGlass_85: -254225764
+      StainedGlass_86: 1960069332
+      StainedGlass_87: -2140028372
+      StainedGlass_88: 1547381896
+      StainedGlass_89: 2010775881
+      StainedGlass_9: -2070652877
+      StainedGlass_90: 302453719
+      StainedGlass_91: -1084126088
+      StainedGlass_92: -383535542
+      StainedGlass_93: 1038994461
+      StainedGlass_94: 1596068145
+      StainedGlass_95: 768795865
+      StainedGlass_96: 1858133950
+      StainedGlass_97: 1900290743
+      StainedGlass_98: 1814014441
+      StainedGlass_99: 47118208
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
