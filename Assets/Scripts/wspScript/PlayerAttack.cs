@@ -8,7 +8,7 @@ public class PlayerAttack : MonoBehaviour
 {
     
     public int AttackType = 0;// 0==defaultAttack
-    public const float attackDisPlayer = 18f;//攻击与玩家的距离
+    public const float attackDisPlayer = 4.5f;//攻击与玩家的距离
     private PlayerManage PlayerManage;
     private GameObject currentWeapon;
     private const float attackCoolTime = 0.2f;//每0.2f可攻击一次
