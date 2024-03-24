@@ -43,7 +43,7 @@ public class OrbitControl : MonoBehaviour
         Debug.Log("Collision between tag: " + thisTag + " and " + otherTag);
 
         // 检测两个刚体的标签
-        if (otherTag == "attack")
+        if (otherTag == "attack" || otherTag == "playBullet")
         {
             xueliangjian();
             if (mon4xueliang <= 0)

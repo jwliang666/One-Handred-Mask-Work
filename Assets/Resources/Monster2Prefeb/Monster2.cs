@@ -71,7 +71,7 @@ public class Monster2 : MonoBehaviour
         Debug.Log("Collision between tag: " + thisTag + " and " + otherTag);
 
         // 检测两个刚体的标签
-        if (otherTag == "attack")
+        if (otherTag == "attack" || otherTag == "playBullet")
         {
             xueliangjian();
             if (mon2xueliang <= 0)
