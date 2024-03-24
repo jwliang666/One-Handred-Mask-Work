@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Monster1 : MonoBehaviour
 {
-    public int mon1xueliang = 10;
+    public int mon1xueliang = 6;
     public GameObject mMyTarget = null;
     public float mTurnRate = 0.05f;
     public float mChaseRange = 10f; // 追随范围

@@ -11,6 +11,7 @@ public class Monster3 : MonoBehaviour
     float spawnRadius = 2.0f;
     public GameObject mMyTarget = null;
     public float mChaseRange = 30f; // 追随范围
+    public GameObject littlePlane = null;
     // Start is called before the first frame update
     void Start()
     {
@@ -127,7 +128,6 @@ public class Monster3 : MonoBehaviour
     private bool IfLittlePlaneliving()
     {
         bool flag = true;
-        GameObject littlePlane = GameObject.Find("GreenUp");
         if (littlePlane == null)
             flag = false;
         return flag;
@@ -135,12 +135,11 @@ public class Monster3 : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D other)
     {
-        Debug.Log("pengpengpenpgnepng");
-        if (other.gameObject.tag == "attack")
+        if (other.gameObject.tag == "attack" && (!IfLittlePlaneliving() ))
         {
             mon3xueliang -= 4;
         }
-        else if (other.gameObject.tag == "playerBullet")
+        else if (other.gameObject.tag == "playerBullet" &&  (!IfLittlePlaneliving() ))
         {
             mon3xueliang -= 1;
         }

@@ -34,7 +34,6 @@ public class OrbitControl : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D other)
     {
-        Debug.Log("pengpengpenpgnepng");
         if (other.gameObject.tag == "attack")
         {
             mon4xueliang -= 4;
