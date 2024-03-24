@@ -10,10 +10,11 @@ public class PlayerMove : MonoBehaviour
     public float currentCoolDownSprintTime = 1.8f;//当前冲刺条能量
     private float sprintMul = 1.4f;
     public Vector3 currentRotation = new Vector3(1, 0, 0);//朝向,只能上下左右朝向
+    private Animator animator;
 
     void Start()
     {
-
+        animator = GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -88,6 +89,19 @@ public class PlayerMove : MonoBehaviour
         else if (horizontalSpeed < 0)
         {
             currentRotation.x = -1;
+        }
+    }
+
+
+    private float Abs(float num)
+    {
+        if (num < 0)
+        {
+            return -num;
+        }
+        else
+        {
+            return num;
         }
     }
 }
