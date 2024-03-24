@@ -12,14 +12,16 @@ public class PlayerMove : MonoBehaviour
     private float sprintTiredTimeMul = 0.1f;//冲刺后不能移动的时间
     public Vector3 currentRotation = new Vector3(1, 0, 0);//朝向,只能上下左右朝向
 
+
     void Start()
     {
-        
+           Physics2D.gravity = new Vector2(0, 0f);
     }
 
     // Update is called once per frame
     void Update()
     {
+        transform.up=new Vector3(0,1,0);
         wsadMove();
         sprintMove();
     }
