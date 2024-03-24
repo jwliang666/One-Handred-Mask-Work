@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class playcontrol : MonoBehaviour
 {
-     public float mHeroSpeed = 13f;//人物移动速度
+    public float mHeroSpeed = 13f;//人物移动速度
     public float coolDownSprintTime = 1.8f;//冲刺条满能量 说是能量其实是2.5s，1s对应1单位能量
     public float currentCoolDownSprintTime = 1.8f;//当前冲刺条能量
     private float sprintMul = 1.4f;

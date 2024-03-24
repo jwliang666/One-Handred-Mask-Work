@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Monster1 : MonoBehaviour
 {
-    public int mon1xueliang = 1;
+    public int mon1xueliang = 10;
     public GameObject mMyTarget = null;
     public float mTurnRate = 0.05f;
     private const float kMySpeed = 5f;
@@ -19,9 +19,13 @@ public class Monster1 : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
-        PointAtPosition(mMyTarget.transform.localPosition, mTurnRate * Time.smoothDeltaTime);
-        transform.localPosition += kMySpeed * Time.smoothDeltaTime * transform.up;
+        if(mMyTarget != null)
+        {
+            PointAtPosition(mMyTarget.transform.localPosition, mTurnRate * Time.smoothDeltaTime);
+            transform.localPosition += kMySpeed * Time.smoothDeltaTime * transform.up;
+        }
+        if (mon1xueliang <= 0)
+            Destroy(gameObject);
     }
 
     private void getMytarget()
@@ -33,31 +37,17 @@ public class Monster1 : MonoBehaviour
         Vector3 v = p - transform.localPosition;
         transform.up = Vector3.LerpUnclamped(transform.up, v, r);
     }
-    public void xueliangjian()
-    {
-        if (mon1xueliang > 0)
-            mon1xueliang--;
-    }
-    private void OnCollisionEnter2D(Collision2D collision)
-    {
-        string thisTag = gameObject.tag; // 获取当前游戏对象的标签
-        string otherTag = collision.gameObject.tag; // 获取碰撞对象的标签
 
-        Debug.Log("Collision between tag: " + thisTag + " and " + otherTag);
-
-        // 检测两个刚体的标签
-        if (otherTag == "attack")
+    void OnTriggerEnter(Collider other)
+    {
+        Debug.Log("pengpengpenpgnepng");
+        if (other.gameObject.tag == "attack")
         {
-            xueliangjian();
-            if (mon1xueliang <= 0)
-                Destroy(gameObject);
-            // 执行对应操作
-            Debug.Log("Collision between Tag1 and Tag2");
+            mon1xueliang -= 4;
         }
-        else if (thisTag == "Tag2" && otherTag == "Tag1")
+        else if (other.gameObject.tag == "playerBullet")
         {
-            // 执行对应操作
-            Debug.Log("Collision between Tag2 and Tag1");
+            mon1xueliang -= 1;
         }
     }
 }

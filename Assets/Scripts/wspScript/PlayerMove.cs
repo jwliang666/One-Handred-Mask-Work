@@ -10,11 +10,10 @@ public class PlayerMove : MonoBehaviour
     public float currentCoolDownSprintTime = 1.8f;//当前冲刺条能量
     private float sprintMul = 1.4f;
     public Vector3 currentRotation = new Vector3(1, 0, 0);//朝向,只能上下左右朝向
-    private Animator animator;
-
+    public Animator myani;
     void Start()
     {
-        animator = GetComponent<Animator>();
+
     }
 
     // Update is called once per frame
@@ -25,15 +24,39 @@ public class PlayerMove : MonoBehaviour
         transform.rotation = Quaternion.Euler(0, 0, 0);
     }
 
-    
+
     private void wsadMove()
     {
         float verticalSpeed = Input.GetAxis("Vertical") * mHeroSpeed;
         float horizontalSpeed = Input.GetAxis("Horizontal") * mHeroSpeed;
         refreshRotation();
         if (ifPlayerCanMove())
+        {
             transform.position += verticalSpeed * Time.smoothDeltaTime * transform.up + horizontalSpeed * Time.smoothDeltaTime * transform.right;
+            myani.GetComponent<Animator>();
+            myani.SetBool("left", false);
+            myani.SetBool("right", false);
+            myani.SetBool("up", false);
+            myani.SetBool("down", false);
+            if (horizontalSpeed < 0)
+            {
+                myani.SetBool("left", true);
+            }
+            else if (horizontalSpeed > 0)
+            {
+                myani.SetBool("right", true);
+            }
+            else if (verticalSpeed > 0)
+            {
+                myani.SetBool("up", true);
+            }
+            else if (verticalSpeed < 0)
+            {
+                myani.SetBool("down", true);
+            }
 
+
+        }
     }
 
 
@@ -48,11 +71,11 @@ public class PlayerMove : MonoBehaviour
                 transform.position += verticalSpeed * Time.smoothDeltaTime * transform.up + horizontalSpeed * Time.smoothDeltaTime * transform.right;
             currentCoolDownSprintTime -= Time.deltaTime;
         }
-        else if(Input.GetKey(KeyCode.L) && currentCoolDownSprintTime > -0.5f)
+        else if (Input.GetKey(KeyCode.L) && currentCoolDownSprintTime > -0.5f)
             currentCoolDownSprintTime -= Time.deltaTime;
 
         if (currentCoolDownSprintTime < coolDownSprintTime && !Input.GetKey(KeyCode.L))
-            currentCoolDownSprintTime +=  0.5f * Time.deltaTime;
+            currentCoolDownSprintTime += 0.5f * Time.deltaTime;
     }
     private bool ifPlayerCanMove()
     {
@@ -89,19 +112,6 @@ public class PlayerMove : MonoBehaviour
         else if (horizontalSpeed < 0)
         {
             currentRotation.x = -1;
-        }
-    }
-
-
-    private float Abs(float num)
-    {
-        if (num < 0)
-        {
-            return -num;
-        }
-        else
-        {
-            return num;
         }
     }
 }

@@ -2,13 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class deShot : MonoBehaviour
+public class deShoot : MonoBehaviour
 {
 
     private float livingTime = 3f;
     private PlayerManage PlayerManage;
-    private PlayerAttack PlayerAttack;
-    private float flyingSpeed = 20f;
+    public float flyingSpeed = 20f;
     void Start()
     {
         getPlayerManage();
@@ -42,11 +41,9 @@ public class deShot : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        
-        if (collision.gameObject.CompareTag("Enemy"))
-        {
+        string otherTag = collision.gameObject.tag;
+        if (otherTag != "Player")
             Destroy(gameObject);          
-        }
     }
 
 }
