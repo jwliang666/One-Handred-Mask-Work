@@ -39,11 +39,13 @@ public class deShoot : MonoBehaviour
         }
     }
 
-    private void OnCollisionEnter2D(Collision2D collision)
+    void OnTriggerStay2D(Collider2D other)
     {
-        string otherTag = collision.gameObject.tag;
+        string otherTag = other.gameObject.tag;
         if (otherTag != "Player")
-            Destroy(gameObject);          
+            Destroy(gameObject);
     }
 
+
+    
 }
