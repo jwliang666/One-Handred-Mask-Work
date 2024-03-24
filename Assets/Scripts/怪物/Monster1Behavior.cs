@@ -7,6 +7,7 @@ public class Monster1 : MonoBehaviour
     public int mon1xueliang = 10;
     public GameObject mMyTarget = null;
     public float mTurnRate = 0.05f;
+    public float mChaseRange = 10f; // 追随范围
     private const float kMySpeed = 5f;
 
     // Start is called before the first frame update
@@ -19,11 +20,12 @@ public class Monster1 : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(mMyTarget != null)
+        if (mMyTarget != null && Vector3.Distance(transform.position, mMyTarget.transform.position) <= mChaseRange)
         {
-            PointAtPosition(mMyTarget.transform.localPosition, mTurnRate * Time.smoothDeltaTime);
-            transform.localPosition += kMySpeed * Time.smoothDeltaTime * transform.up;
+            PointAtPosition(mMyTarget.transform.position, mTurnRate * Time.smoothDeltaTime);
+            transform.position += kMySpeed * Time.smoothDeltaTime * transform.up;
         }
+
         if (mon1xueliang <= 0)
             Destroy(gameObject);
     }
@@ -32,9 +34,10 @@ public class Monster1 : MonoBehaviour
     {
         mMyTarget = GameObject.Find("hero");
     }
+
     private void PointAtPosition(Vector3 p, float r)
     {
-        Vector3 v = p - transform.localPosition;
+        Vector3 v = p - transform.position;
         transform.up = Vector3.LerpUnclamped(transform.up, v, r);
     }
 
