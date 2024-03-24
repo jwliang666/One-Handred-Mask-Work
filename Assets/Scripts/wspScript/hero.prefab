@@ -11,11 +11,11 @@ GameObject:
   - component: {fileID: 8378584501308701045}
   - component: {fileID: 2068176774277048637}
   - component: {fileID: 5389059853388583903}
-  - component: {fileID: 6568252065802609388}
   - component: {fileID: 3271227943698224995}
   - component: {fileID: 5242657018157942705}
-  - component: {fileID: -1046956980916070051}
   - component: {fileID: -8321822952287889659}
+  - component: {fileID: -4196260202022161995}
+  - component: {fileID: 4702598128627900528}
   m_Layer: 0
   m_Name: hero
   m_TagString: Player
@@ -135,33 +135,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 2.56, y: 2.56}
   m_EdgeRadius: 0
---- !u!50 &6568252065802609388
-Rigidbody2D:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2656057774698037816}
-  m_BodyType: 0
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 0
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 0
 --- !u!114 &3271227943698224995
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -191,19 +164,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   AttackType: 0
---- !u!114 &-1046956980916070051
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2656057774698037816}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6788f24307dc50d4991d27189cc0e583, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  isDefencing: 0
 --- !u!114 &-8321822952287889659
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -217,3 +177,29 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   healthCnt: 100
+--- !u!114 &-4196260202022161995
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2656057774698037816}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6788f24307dc50d4991d27189cc0e583, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isDefencing: 0
+--- !u!114 &4702598128627900528
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2656057774698037816}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d64d2adc49680240ba2a560cbb2903e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ShootType: 0
