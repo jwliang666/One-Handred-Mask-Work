@@ -55,19 +55,19 @@ public class bsheep : MonoBehaviour
              
              
              
-              if(direction.x<0)
+              if(direction.x<-0.05f)
               {
                 myani.SetBool("bsleft",true);
               }
-              if(direction.x>0)
+              if(direction.x>0.05f)
               {
                myani.SetBool("bsright",true);
               }  
-              else if(direction.y>0)
+              else if(direction.y>0.05f)
               {
                 myani.SetBool("bsup",true);
               }  
-              else if(direction.y<0)
+              else if(direction.y<-0.05f)
               {
                 myani.SetBool("bsdown",true);
               }
