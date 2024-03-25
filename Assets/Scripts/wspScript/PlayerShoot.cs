@@ -12,6 +12,7 @@ public class PlayerShoot : MonoBehaviour
     private PlayerManage PlayerManage;
     private const float ShootCoolTime = 0.2f;//每0.2f可攻击一次
     private float ShootDisTime = 0.2f;//>0.2f才能攻击，否则不能
+    private Shield Shield;
     void Start()
     {
         getPlayerManage();
@@ -25,6 +26,12 @@ public class PlayerShoot : MonoBehaviour
         ShootTime();
     }
 
+
+    private bool IfisDefencing()
+    {
+        Shield = GetComponent<Shield>();
+        return Shield.isDefencing;
+    }
 
     private void getPlayerManage()
     {
@@ -40,7 +47,7 @@ public class PlayerShoot : MonoBehaviour
     private void Shoot()
     {
 
-        if (Input.GetKeyDown(KeyCode.K))
+        if (Input.GetKeyDown(KeyCode.K) && !IfisDefencing())
         {
             if (ShootType == 0)
             {
