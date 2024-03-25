@@ -36,7 +36,7 @@ public class heroInjured : MonoBehaviour
                 healthCnt -= 15;
             }
         }
-        if (healthCnt <= 0)
-            Destroy(gameObject);
+        
+           
     }
 }

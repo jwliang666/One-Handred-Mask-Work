@@ -6,7 +6,7 @@ using UnityEngine;
 public class bsheep : MonoBehaviour
 {
     public Transform[] waypoints; // 定义路径点
-    public float moveSpeed = 3f; // 移动速度
+    public float moveSpeed = 2f; // 移动速度
 
     private int currentWaypointIndex = 0; // 当前路径点索引
     public Animator myani;
