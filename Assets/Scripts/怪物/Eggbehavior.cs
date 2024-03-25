@@ -41,7 +41,7 @@ public class EggBehavior : MonoBehaviour
     private void OnCollisionEnter2D(Collision2D collision)
     {
         string Tag = collision.gameObject.tag;
-        if (Tag == "Player")
+        if (Tag == "Player" || Tag == "Wall")
         {
             Destroy(transform.gameObject);
         }

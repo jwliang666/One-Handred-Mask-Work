@@ -8,6 +8,7 @@ TagManager:
   - attack
   - Bullet
   - playerBullet
+  - Wall
   layers:
   - Default
   - TransparentFX
