@@ -27,7 +27,9 @@ public class ShieldHalo : MonoBehaviour
             timePassed += Time.deltaTime;
             yield return null; // 等待下一帧
         }
-        shieldRenderer.material.color = endColor; // 确保最终颜色
+
+        // 最后一个颜色变化完成后，突变为红色
+        shieldRenderer.material.color = Color.red;
     }
 
     void Update()
