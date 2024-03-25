@@ -12,6 +12,9 @@ public class Monster2 : MonoBehaviour
     public Vector3 targetPosition;
     private GameObject hero;
     private float timer = 0f;
+
+    //跟随范围
+    public float MyChasingRange = 20f;
     void Start()
     {
         hero = GameObject.Find("hero");
@@ -21,15 +24,19 @@ public class Monster2 : MonoBehaviour
     {
         timer += Time.deltaTime;
         targetPosition = hero.transform.position;
-
-        if (timer >= launchInterval)
+        float mydistance = Vector3.Distance(targetPosition, transform.position);
+        Debug.Log(mydistance);
+        if (timer >= launchInterval && mydistance <= MyChasingRange)
         {
             LaunchBomb();
             timer = 0f;
         }
 
         if (mon2xueliang <= 0)
+        {
+            cntjian();
             Destroy(gameObject);
+        }
     }
 
     void LaunchBomb()
@@ -73,6 +80,15 @@ public class Monster2 : MonoBehaviour
         else if (other.gameObject.tag == "playerBullet")
         {
             mon2xueliang -= 1;
+        }
+    }
+
+    private void cntjian()
+    {
+        monsterCnt a = GetComponent<monsterCnt>();
+        if (a != null)
+        {
+            a.moncntjian();
         }
     }
 }

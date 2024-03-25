@@ -35,7 +35,10 @@ public class Monster3 : MonoBehaviour
 
 
         if (mon3xueliang <= 0)
+        {
+            cntjian();
             Destroy(gameObject);
+        }
     }
     private void luoxuanegg()
     {
@@ -135,13 +138,22 @@ public class Monster3 : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.gameObject.tag == "attack" && (!IfLittlePlaneliving() ))
+        if (other.gameObject.tag == "attack" && (!IfLittlePlaneliving()))
         {
             mon3xueliang -= 4;
         }
-        else if (other.gameObject.tag == "playerBullet" &&  (!IfLittlePlaneliving() ))
+        else if (other.gameObject.tag == "playerBullet" && (!IfLittlePlaneliving()))
         {
             mon3xueliang -= 1;
+        }
+    }
+
+    private void cntjian()
+    {
+        monsterCnt a = GetComponent<monsterCnt>();
+        if (a != null)
+        {
+            a.moncntjian();
         }
     }
 }

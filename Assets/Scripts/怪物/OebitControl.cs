@@ -29,7 +29,10 @@ public class OrbitControl : MonoBehaviour
         transform.rotation = r * transform.rotation;
 
         if (mon4xueliang <= 0)
+        {
+            cntjian();
             Destroy(gameObject);
+        }
     }
 
     void OnTriggerEnter2D(Collider2D other)
@@ -43,6 +46,13 @@ public class OrbitControl : MonoBehaviour
             mon4xueliang -= 1;
         }
     }
-
+    private void cntjian()
+    {
+        monsterCnt a = GetComponent<monsterCnt>();
+        if (a != null)
+        {
+            a.moncntjian();
+        }
+    }
 
 }
