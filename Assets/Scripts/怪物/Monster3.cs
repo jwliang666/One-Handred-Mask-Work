@@ -9,9 +9,14 @@ public class Monster3 : MonoBehaviour
     private float spawnTimer = 0f;
     private float spawnInterval = 1f;
     float spawnRadius = 2.0f;
+    public GameObject mMyTarget = null;
+    public float mChaseRange = 30f; // 追随范围
+    public GameObject littlePlane = null;
     // Start is called before the first frame update
     void Start()
     {
+        mMyTarget = GameObject.Find("hero");
+        Debug.Assert(mMyTarget != null);
 
     }
 
@@ -20,15 +25,20 @@ public class Monster3 : MonoBehaviour
     {
         spawnTimer += Time.deltaTime;
         float fangshi = Random.value;
-        if (fangshi >= 0.5f)
-            luoxuanegg();
-        else
-            tongshiegg();
-        // 当计时器大于等于生成间隔时生成蛋并重置计时器
+        if (mMyTarget != null && Vector3.Distance(transform.position, mMyTarget.transform.position) <= mChaseRange)
+        {
+            if (fangshi >= 0.5f)
+                luoxuanegg();
+            else
+                tongshiegg();
+        }// 当计时器大于等于生成间隔时生成蛋并重置计时器
 
 
         if (mon3xueliang <= 0)
+        {
+            cntjian();
             Destroy(gameObject);
+        }
     }
     private void luoxuanegg()
     {
@@ -121,7 +131,6 @@ public class Monster3 : MonoBehaviour
     private bool IfLittlePlaneliving()
     {
         bool flag = true;
-        GameObject littlePlane = GameObject.Find("GreenUp");
         if (littlePlane == null)
             flag = false;
         return flag;
@@ -129,14 +138,22 @@ public class Monster3 : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D other)
     {
-        Debug.Log("pengpengpenpgnepng");
-        if (other.gameObject.tag == "attack")
+        if (other.gameObject.tag == "attack" && (!IfLittlePlaneliving()))
         {
             mon3xueliang -= 4;
         }
-        else if (other.gameObject.tag == "playerBullet")
+        else if (other.gameObject.tag == "playerBullet" && (!IfLittlePlaneliving()))
         {
             mon3xueliang -= 1;
+        }
+    }
+
+    private void cntjian()
+    {
+        monsterCnt a = GetComponent<monsterCnt>();
+        if (a != null)
+        {
+            a.moncntjian();
         }
     }
 }
