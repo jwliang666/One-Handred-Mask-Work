@@ -27,7 +27,10 @@ public class Monster1 : MonoBehaviour
         }
 
         if (mon1xueliang <= 0)
+        {
+            cntjian();
             Destroy(gameObject);
+        }
     }
 
     private void getMytarget()
@@ -51,6 +54,14 @@ public class Monster1 : MonoBehaviour
         else if (other.gameObject.tag == "playerBullet")
         {
             mon1xueliang -= 1;
+        }
+    }
+    private void cntjian()
+    {
+        monsterCnt a = GetComponent<monsterCnt>();
+        if (a != null)
+        {
+            a.moncntjian();
         }
     }
 
