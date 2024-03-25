@@ -24,12 +24,15 @@ EditorUserSettings:
       value: 560904000603580b540b0a24167a0744414e1979297825657e281b32b2b5633e
       flags: 0
     RecentlyUsedSceneGuid-6:
+<<<<<<< Updated upstream
       value: 00030c53530358035a575f70167b0a44151519297a7171672c2a1e32bae53668
       flags: 0
     RecentlyUsedSceneGuid-7:
       value: 5657035152025b58550c557b437b06444416487d79797f682f7d4432e3b9323c
       flags: 0
     RecentlyUsedSceneGuid-8:
+=======
+>>>>>>> Stashed changes
       value: 54530d0552035b5e59565a7547720744454f1b7d2e29743175781c31b5e16039
       flags: 0
     vcSharedLogLevel:
