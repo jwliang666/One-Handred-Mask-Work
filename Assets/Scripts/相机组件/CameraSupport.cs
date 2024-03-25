@@ -42,6 +42,10 @@ public class CameraSupport : MonoBehaviour
     void Update()
     {
         UpdateWorldWindowBound();
+        if (Input.GetKeyDown(KeyCode.Q))
+        {
+            Quit();
+        }
         if (Input.GetKey(KeyCode.U))
         {
             ZoomCamera(-zoomSpeed * Time.deltaTime);
@@ -143,6 +147,12 @@ public class CameraSupport : MonoBehaviour
         {
             Debug.LogWarning("No Camera component found on this object.");
         }
+    }
+
+    void Quit()
+    {
+        // 退出游戏
+        Application.Quit();
     }
 
     #endregion
