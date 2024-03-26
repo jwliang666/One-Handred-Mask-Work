@@ -12,7 +12,7 @@ public class PlayerMove : MonoBehaviour
     public Vector3 currentRotation = new Vector3(1, 0, 0);//朝向,只能上下左右朝向
     public Animator myani;
     private Rigidbody2D rb;
-    private float UIsprintBar = 0.9f;
+    public float UIsprintBar = 0.9f;
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
