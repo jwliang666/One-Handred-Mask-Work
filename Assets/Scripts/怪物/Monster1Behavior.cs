@@ -1,16 +1,19 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.UI;
 using UnityEngine;
+using Unity.VisualScripting;
 
 public class Monster1 : MonoBehaviour
 {
     public int mon1xueliang = 6;
     public GameObject mMyTarget1 = null;
     public GameObject mMyTarget2 = null;
-    public float mTurnRate = 0.05f;
-    public float mChaseRange = 10f; // 追随范围
+    public float mTurnRate = 1f;
+    public float mChaseRange = 15f; // 追随范围
     private const float kMySpeed = 5f;
     public AudioSource deathSound;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -64,7 +67,7 @@ public class Monster1 : MonoBehaviour
     {
         if (other.gameObject.tag == "attack")
         {
-            mon1xueliang -= 4; 
+            mon1xueliang -= 4;
             deathSound.Play();
         }
         else if (other.gameObject.tag == "playerBullet")
@@ -78,9 +81,8 @@ public class Monster1 : MonoBehaviour
         monsterCnt a = GetComponent<monsterCnt>();
         if (a != null)
         {
-            a.moncntjian(); 
+            a.moncntjian();
             deathSound.Play();
         }
     }
-
 }
