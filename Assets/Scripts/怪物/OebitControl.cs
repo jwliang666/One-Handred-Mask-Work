@@ -8,7 +8,7 @@ public class OrbitControl : MonoBehaviour
     public float OrbitRadius = 10f;
     public float OrbitSpeed = 360.0f / 10f; // 10 seconds per cycle
     public Transform HostXform = null;
-
+    public AudioSource deathSound;
     // Start is called before the first frame update
     void Start()
     {
@@ -16,6 +16,7 @@ public class OrbitControl : MonoBehaviour
 
         // we follow the host object)
         transform.rotation = Quaternion.identity;
+        deathSound = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -43,10 +44,12 @@ public class OrbitControl : MonoBehaviour
         if (other.gameObject.tag == "attack")
         {
             mon4xueliang -= 4;
+            deathSound.Play();
         }
         else if (other.gameObject.tag == "playerBullet")
         {
             mon4xueliang -= 1;
+            deathSound.Play();
         }
     }
     private void cntjian()

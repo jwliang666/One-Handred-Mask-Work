@@ -11,13 +11,14 @@ public class LittleBoss : MonoBehaviour
     public GameObject mMyTarget1 = null;
     public GameObject mMyTarget2 = null;
     public float mChaseRange = 30f; // 追随范围
+    public AudioSource deathSound;
     //public GameObject littlePlane = null;
     // Start is called before the first frame update
     void Start()
     {
         mMyTarget1 = GameObject.Find("hero");
         mMyTarget2 = GameObject.Find("bssheep");
-
+        deathSound = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -145,10 +146,12 @@ public class LittleBoss : MonoBehaviour
         if (other.gameObject.tag == "attack" /*&& (!IfLittlePlaneliving())*/)
         {
             mon3xueliang -= 4;
+            deathSound.Play();
         }
         else if (other.gameObject.tag == "playerBullet" /*&& (!IfLittlePlaneliving())*/)
         {
             mon3xueliang -= 1;
+            deathSound.Play();
         }
     }
 

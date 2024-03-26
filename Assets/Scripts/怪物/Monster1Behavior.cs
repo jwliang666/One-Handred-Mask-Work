@@ -10,11 +10,12 @@ public class Monster1 : MonoBehaviour
     public float mTurnRate = 0.05f;
     public float mChaseRange = 10f; // 追随范围
     private const float kMySpeed = 5f;
-
+    public AudioSource deathSound;
     // Start is called before the first frame update
     void Start()
     {
         getMytarget();
+        deathSound = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -63,11 +64,13 @@ public class Monster1 : MonoBehaviour
     {
         if (other.gameObject.tag == "attack")
         {
-            mon1xueliang -= 4;
+            mon1xueliang -= 4; 
+            deathSound.Play();
         }
         else if (other.gameObject.tag == "playerBullet")
         {
             mon1xueliang -= 1;
+            deathSound.Play();
         }
     }
     private void cntjian()
@@ -75,7 +78,8 @@ public class Monster1 : MonoBehaviour
         monsterCnt a = GetComponent<monsterCnt>();
         if (a != null)
         {
-            a.moncntjian();
+            a.moncntjian(); 
+            deathSound.Play();
         }
     }
 
