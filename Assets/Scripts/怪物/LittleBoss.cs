@@ -36,6 +36,9 @@ public class LittleBoss : MonoBehaviour
         if (mon3xueliang <= 0)
         {
             cntjian();
+            Vector3 BOMBp = transform.position;
+            Quaternion qq = Quaternion.Euler(0, 0, 0);
+            Instantiate(Resources.Load("Prefabs/BigMonsterDead") as GameObject, BOMBp, qq);
             Destroy(gameObject);
         }
     }

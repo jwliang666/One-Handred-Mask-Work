@@ -49,7 +49,6 @@ public class Monster1 : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D other)
     {
-        Debug.Log("pengpengpenpgnepng");
         if (other.gameObject.tag == "attack")
         {
             mon1xueliang -= 4;
