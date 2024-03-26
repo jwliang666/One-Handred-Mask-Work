@@ -333,6 +333,95 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1a9fe29ab800ad347921f2e8288ebacc, type: 3}
+--- !u!1001 &1499879389
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: -6671582680037522466, guid: c05ddd59d8e83e64d8e24a86ec984233, type: 3}
+      propertyPath: m_Size.x
+      value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: -6671582680037522466, guid: c05ddd59d8e83e64d8e24a86ec984233, type: 3}
+      propertyPath: m_Size.y
+      value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: -6671582680037522466, guid: c05ddd59d8e83e64d8e24a86ec984233, type: 3}
+      propertyPath: m_Offset.x
+      value: 0.12
+      objectReference: {fileID: 0}
+    - target: {fileID: -6671582680037522466, guid: c05ddd59d8e83e64d8e24a86ec984233, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3274624226092741163, guid: c05ddd59d8e83e64d8e24a86ec984233, type: 3}
+      propertyPath: m_Name
+      value: deAxe
+      objectReference: {fileID: 0}
+    - target: {fileID: 5752653623486695888, guid: c05ddd59d8e83e64d8e24a86ec984233, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 6.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 5752653623486695888, guid: c05ddd59d8e83e64d8e24a86ec984233, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -1.45
+      objectReference: {fileID: 0}
+    - target: {fileID: 5752653623486695888, guid: c05ddd59d8e83e64d8e24a86ec984233, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5752653623486695888, guid: c05ddd59d8e83e64d8e24a86ec984233, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5752653623486695888, guid: c05ddd59d8e83e64d8e24a86ec984233, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5752653623486695888, guid: c05ddd59d8e83e64d8e24a86ec984233, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5752653623486695888, guid: c05ddd59d8e83e64d8e24a86ec984233, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5752653623486695888, guid: c05ddd59d8e83e64d8e24a86ec984233, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5752653623486695888, guid: c05ddd59d8e83e64d8e24a86ec984233, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5752653623486695888, guid: c05ddd59d8e83e64d8e24a86ec984233, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6926025567944851721, guid: c05ddd59d8e83e64d8e24a86ec984233, type: 3}
+      propertyPath: m_Size.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6926025567944851721, guid: c05ddd59d8e83e64d8e24a86ec984233, type: 3}
+      propertyPath: m_Size.y
+      value: 0.25
+      objectReference: {fileID: 0}
+    - target: {fileID: 6926025567944851721, guid: c05ddd59d8e83e64d8e24a86ec984233, type: 3}
+      propertyPath: m_Size.z
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6926025567944851721, guid: c05ddd59d8e83e64d8e24a86ec984233, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: c05ddd59d8e83e64d8e24a86ec984233, type: 3}
 --- !u!95 &1788990238 stripped
 Animator:
   m_CorrespondingSourceObject: {fileID: 293240009415116306, guid: ff8f355633c029e4d987f37d523edb87, type: 3}
@@ -345,3 +434,4 @@ SceneRoots:
   - {fileID: 1202126463}
   - {fileID: 1401064780}
   - {fileID: 748702577}
+  - {fileID: 1499879389}
