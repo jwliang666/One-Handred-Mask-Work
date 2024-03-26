@@ -24,9 +24,9 @@ public class bombbehavior : MonoBehaviour
         string Tag = collision.gameObject.tag;
         if (Tag == "Player" || Tag == "Wall")
         {
-             Destroy(transform.gameObject);
+            Destroy(transform.gameObject);
         }
-     
+
     }
 
 

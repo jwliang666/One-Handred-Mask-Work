@@ -8,7 +8,7 @@ public class Monster2 : MonoBehaviour
     public GameObject bombPrefab; // 需要在Unity编辑器中指定的炸弹预制体
     //public GameObject hero; // 目标对象（比如英雄）
     public float launchInterval = 1f; // 发射间隔时间
-    public float speed = 10f; // 炸弹的速度
+    //public float speed = 10f; // 炸弹的速度
     public Vector3 targetPosition;
     private GameObject hero;
     private float timer = 0f;
@@ -60,7 +60,7 @@ public class Monster2 : MonoBehaviour
         bombbehavior bombBehavior = bomb.GetComponent<bombbehavior>();
         if (bombBehavior != null)
         {
-            bombBehavior.SetDirection(direction * speed);
+            bombBehavior.SetDirection(direction);
         }
         else
         {

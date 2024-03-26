@@ -8,7 +8,7 @@ public class EggBehavior : MonoBehaviour
     //static private GreenArrowBehavior sGreenArrow = null;
     //static public void SetGreenArrow(GreenArrowBehavior g) { sGreenArrow = g; }
 
-    private const float kEggSpeed = 40f;
+    private const float kEggSpeed = 20f;
     //private const int kLifeTime = 300; // Alife for this number of cycles
     //private int mLifeCount = 0;
     // Start is called before the first frame update
@@ -46,5 +46,12 @@ public class EggBehavior : MonoBehaviour
             Destroy(transform.gameObject);
         }
 
+    }
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.tag == "Player" || collision.tag == "Wall")
+        {
+            Destroy(transform.gameObject);
+        }
     }
 }
