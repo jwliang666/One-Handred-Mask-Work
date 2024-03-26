@@ -17,6 +17,7 @@ public class PlayerAttack : MonoBehaviour
     public float rotationSpeed = 450f;
     private const float aXeCoolTime = 1.0f;
     private float aXeDisTime = 1.0f;
+    //public AudioSource attackSound;
     void Start()
     {
         getPlayerManage();
@@ -112,6 +113,7 @@ public class PlayerAttack : MonoBehaviour
                 p += PlayerManage.getCurrentPlayerRotation().y * PlayerManage.getCurrentPlayerSize().y * transform.up * PlayerAttack.attackDisPlayer * mul;
                 p.z += 2;
                 Instantiate(Resources.Load("Prefabs/deAttack") as GameObject, p, q);
+                //attackSound.Play();
             } 
             else if(AttackType == 1 && aXeDisTime > aXeCoolTime)
             {
