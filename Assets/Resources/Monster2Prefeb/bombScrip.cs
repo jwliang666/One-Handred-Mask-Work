@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class bombbehavior : MonoBehaviour
 {
-    public float speed = 40f;
+    public float speed = 20f;
 
     private Vector3 direction;
 
@@ -18,18 +18,17 @@ public class bombbehavior : MonoBehaviour
         }
     }
 
-
-    private void OnCollisionEnter2D(Collision2D collision)
+    void OnTriggerStay2D(Collider2D other)
     {
-        string Tag = collision.gameObject.tag;
-        if (Tag == "Player" || Tag == "Wall")
+        string otherTag = other.gameObject.tag;
+        if (otherTag == "Player" || otherTag == "Wall")
         {
             Vector3 BOMBp = transform.position;
             Quaternion qq = Quaternion.Euler(0, 0, 0);
             Instantiate(Resources.Load("Prefabs/Red") as GameObject, BOMBp, qq);
-            Destroy(transform.gameObject);
+            Destroy(gameObject);
         }
-     
+
     }
 
 
@@ -43,4 +42,6 @@ public class bombbehavior : MonoBehaviour
     {
         direction = newDirection.normalized;
     }
+
+
 }

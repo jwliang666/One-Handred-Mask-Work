@@ -38,22 +38,14 @@ public class EggBehavior : MonoBehaviour
         }
     }
 
-    private void OnCollisionEnter2D(Collision2D collision)
-    {
-        string Tag = collision.gameObject.tag;
-        if (Tag == "Player" || Tag == "Wall")
-        {
-            Vector3 BOMBp = transform.position;
-            Quaternion qq = Quaternion.Euler(0, 0, 0);
-            Instantiate(Resources.Load("Prefabs/Purple") as GameObject, BOMBp, qq);
-            Destroy(transform.gameObject);
-        }
 
-    }
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.tag == "Player" || collision.tag == "Wall")
         {
+            Vector3 BOMBp = transform.position;
+            Quaternion qq = Quaternion.Euler(0, 0, 0);
+            Instantiate(Resources.Load("Prefabs/Purple") as GameObject, BOMBp, qq);
             Destroy(transform.gameObject);
         }
     }

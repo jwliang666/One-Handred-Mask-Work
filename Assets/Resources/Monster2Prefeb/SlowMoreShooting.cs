@@ -25,7 +25,6 @@ public class SlowMoreShooting : MonoBehaviour
         timer += Time.deltaTime;
         targetPosition = hero.transform.position;
         float mydistance = Vector3.Distance(targetPosition, transform.position);
-        Debug.Log(mydistance);
         if (timer >= launchInterval && mydistance <= MyChasingRange)
         {
             LaunchBomb();
@@ -35,6 +34,9 @@ public class SlowMoreShooting : MonoBehaviour
         if (mon2xueliang <= 0)
         {
             cntjian();
+            Vector3 BOMBp = transform.position;
+            Quaternion qq = Quaternion.Euler(0, 0, 0);
+            Instantiate(Resources.Load("Prefabs/smallMonsterDead") as GameObject, BOMBp, qq);
             Destroy(gameObject);
         }
     }
@@ -72,7 +74,6 @@ public class SlowMoreShooting : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D other)
     {
-        Debug.Log("pengpengpenpgnepng");
         if (other.gameObject.tag == "attack")
         {
             mon2xueliang -= 4;

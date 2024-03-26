@@ -8,12 +8,13 @@ public class PlayerMove : MonoBehaviour
     public float mHeroSpeed = 13f;//人物移动速度
     public float coolDownSprintTime = 0.9f;//冲刺条满能量 说是能量其实是1.8s，1s对应1单位能量
     public float currentCoolDownSprintTime = 0.9f;//当前冲刺条能量
-    private float sprintMul = 1.35f;
+    private float sprintMul = 2.4f;
     public Vector3 currentRotation = new Vector3(1, 0, 0);//朝向,只能上下左右朝向
     public Animator myani;
+    private Rigidbody2D rb;
     void Start()
     {
-
+        rb = GetComponent<Rigidbody2D>();
     }
 
     // Update is called once per frame
@@ -32,7 +33,8 @@ public class PlayerMove : MonoBehaviour
         refreshRotation();
         if (ifPlayerCanMove())
         {
-            transform.position += verticalSpeed * Time.smoothDeltaTime * transform.up + horizontalSpeed * Time.smoothDeltaTime * transform.right;
+            Vector2 movement = (verticalSpeed * Time.fixedDeltaTime * transform.up) + (horizontalSpeed * Time.fixedDeltaTime * transform.right);
+            rb.MovePosition(rb.position + movement);
             myani.GetComponent<Animator>();
             myani.SetBool("left", false);
             myani.SetBool("right", false);
@@ -67,8 +69,8 @@ public class PlayerMove : MonoBehaviour
             float verticalSpeed = Input.GetAxis("Vertical") * mHeroSpeed * sprintMul;
             float horizontalSpeed = Input.GetAxis("Horizontal") * mHeroSpeed * sprintMul;
             refreshRotation();
-            if (ifPlayerCanMove())
-                transform.position += verticalSpeed * Time.smoothDeltaTime * transform.up + horizontalSpeed * Time.smoothDeltaTime * transform.right;
+            Vector2 movement = (verticalSpeed * Time.fixedDeltaTime * transform.up) + (horizontalSpeed * Time.fixedDeltaTime * transform.right);
+            rb.MovePosition(rb.position + movement);
             currentCoolDownSprintTime -= Time.deltaTime;
         }
         else if (Input.GetKey(KeyCode.L) && currentCoolDownSprintTime > -0.5f)
@@ -77,6 +79,7 @@ public class PlayerMove : MonoBehaviour
         if (currentCoolDownSprintTime < coolDownSprintTime && !Input.GetKey(KeyCode.L))
             currentCoolDownSprintTime += 0.5f * Time.deltaTime;
     }
+
     private bool ifPlayerCanMove()
     {
         bool flag = true;

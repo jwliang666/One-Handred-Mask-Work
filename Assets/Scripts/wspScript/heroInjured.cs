@@ -31,29 +31,24 @@ public class heroInjured : MonoBehaviour
             {
                 healthCnt -= 20;
             }
-            if (Tag == "Bullet")
-            {
-                healthCnt -= 15;
-            }
+
         }
-
-
     }
-    void OnTriggerEnter2D(Collider2D other)
-    {
-        string Tag = other.gameObject.tag;
 
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        
+        string Tag = collision.gameObject.tag;
         if (!IfisDefencing())
         {
-            if (Tag == "Enemy")
-            {
-                healthCnt -= 20;
-            }
             if (Tag == "Bullet")
             {
                 healthCnt -= 15;
             }
+
         }
-        // 在这里处理触发器碰撞事件
     }
+
+
+
 }
