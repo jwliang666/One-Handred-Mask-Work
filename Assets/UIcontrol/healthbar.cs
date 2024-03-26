@@ -16,6 +16,7 @@ public class healthbar : MonoBehaviour
 
     void UpdateHealthBar()
     {
+        tar = GameObject.Find("hero");
         CurrentHealth=tar.GetComponent<heroInjured>().healthCnt;
         float healthPercent = CurrentHealth / MaxHealth;
         bloodBar.fillAmount = healthPercent;

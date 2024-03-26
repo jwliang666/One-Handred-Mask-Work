@@ -6,11 +6,14 @@ public class deAttack : MonoBehaviour
 {
     // Start is called before the first frame update
     
-    private float livingTime = 0.2f;
+    private float livingTime = 0.15f;
     private PlayerManage PlayerManage;
     private PlayerAttack PlayerAttack;
     private Transform PlayerTransform;
+    private float swordSpeed = 5f;
     Vector3 qp;
+    private Vector3 swordDistance = new Vector3(0, 0, 0);
+    private float alreadyLivingTime = 0;
     void Start()
     {
         getPlayerManage();
@@ -22,6 +25,7 @@ public class deAttack : MonoBehaviour
     {
         livingToDead();
         followPlayer();
+        swordDisCnt();
     }
     private void getPlayerManage()
     {
@@ -75,11 +79,21 @@ public class deAttack : MonoBehaviour
         Vector3 p = PlayerManage.getCurrentPlayerPosition();
         p += PlayerManage.getCurrentPlayerRotation().x * PlayerManage.getCurrentPlayerSize().x * PlayerTransform.right * PlayerAttack.attackDisPlayer * mul;
         p += PlayerManage.getCurrentPlayerRotation().y * PlayerManage.getCurrentPlayerSize().y * PlayerTransform.up * PlayerAttack.attackDisPlayer * mul;
+        p.z += 2;
         qp = PlayerManage.getCurrentPlayerPosition();
         qp += 0.5f * PlayerManage.getCurrentPlayerRotation().x * PlayerManage.getCurrentPlayerSize().x * PlayerTransform.right * PlayerAttack.attackDisPlayer * mul;
         qp += 0.5f * PlayerManage.getCurrentPlayerRotation().y * PlayerManage.getCurrentPlayerSize().y * PlayerTransform.up * PlayerAttack.attackDisPlayer * mul;
-        transform.position = p;
+        transform.position = p + swordDistance;
         transform.rotation = q;
+    }
+
+    private void swordDisCnt()
+    {
+        alreadyLivingTime += Time.deltaTime;
+        if(alreadyLivingTime <= 0.8f * livingTime)
+            swordDistance += swordSpeed * Time.deltaTime * transform.up;
+        else
+            swordDistance -= 2f *swordSpeed * Time.deltaTime * transform.up;
     }
     private void livingToDead()
     {

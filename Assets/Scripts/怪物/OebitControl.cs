@@ -31,6 +31,9 @@ public class OrbitControl : MonoBehaviour
         if (mon4xueliang <= 0)
         {
             cntjian();
+            Vector3 BOMBp = transform.position;
+            Quaternion qq = Quaternion.Euler(0, 0, 0);
+            Instantiate(Resources.Load("Prefabs/smallMonsterDead") as GameObject, BOMBp, qq);
             Destroy(gameObject);
         }
     }

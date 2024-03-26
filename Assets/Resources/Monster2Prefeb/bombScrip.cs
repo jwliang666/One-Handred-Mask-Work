@@ -24,9 +24,12 @@ public class bombbehavior : MonoBehaviour
         string Tag = collision.gameObject.tag;
         if (Tag == "Player" || Tag == "Wall")
         {
+            Vector3 BOMBp = transform.position;
+            Quaternion qq = Quaternion.Euler(0, 0, 0);
+            Instantiate(Resources.Load("Prefabs/Red") as GameObject, BOMBp, qq);
             Destroy(transform.gameObject);
         }
-
+     
     }
 
 

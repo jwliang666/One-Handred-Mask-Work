@@ -50,6 +50,7 @@ public class PlayerAttack : MonoBehaviour
         {
             if(AttackType == 0)
             {
+             
                 float mul = 1f;//用来控制斜上距离
 
                 float z = 0;
@@ -94,6 +95,7 @@ public class PlayerAttack : MonoBehaviour
                 Vector3 p = PlayerManage.getCurrentPlayerPosition();
                 p += PlayerManage.getCurrentPlayerRotation().x * PlayerManage.getCurrentPlayerSize().x * transform.right * PlayerAttack.attackDisPlayer * mul;
                 p += PlayerManage.getCurrentPlayerRotation().y * PlayerManage.getCurrentPlayerSize().y * transform.up * PlayerAttack.attackDisPlayer * mul;
+                p.z += 2;
                 Instantiate(Resources.Load("Prefabs/deAttack") as GameObject, p, q);
             } 
             attackDisTime -= attackCoolTime;
