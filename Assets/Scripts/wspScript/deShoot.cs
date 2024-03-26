@@ -43,7 +43,13 @@ public class deShoot : MonoBehaviour
     {
         string otherTag = other.gameObject.tag;
         if (otherTag != "Player")
+        {
+            Vector3 BOMBp = transform.position;
+            Quaternion qq = Quaternion.Euler(0, 0, 0);
+            Instantiate(Resources.Load("Prefabs/Blue") as GameObject, BOMBp, qq);
             Destroy(gameObject);
+        }
+           
     }
 
 

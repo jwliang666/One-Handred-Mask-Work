@@ -8,7 +8,7 @@ public class EggBehavior : MonoBehaviour
     //static private GreenArrowBehavior sGreenArrow = null;
     //static public void SetGreenArrow(GreenArrowBehavior g) { sGreenArrow = g; }
 
-    private const float kEggSpeed = 40f;
+    private const float kEggSpeed = 20f;
     //private const int kLifeTime = 300; // Alife for this number of cycles
     //private int mLifeCount = 0;
     // Start is called before the first frame update
@@ -43,6 +43,9 @@ public class EggBehavior : MonoBehaviour
         string Tag = collision.gameObject.tag;
         if (Tag == "Player" || Tag == "Wall")
         {
+            Vector3 BOMBp = transform.position;
+            Quaternion qq = Quaternion.Euler(0, 0, 0);
+            Instantiate(Resources.Load("Prefabs/Purple") as GameObject, BOMBp, qq);
             Destroy(transform.gameObject);
         }
 

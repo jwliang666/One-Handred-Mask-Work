@@ -50,6 +50,7 @@ public class PlayerAttack : MonoBehaviour
         {
             if(AttackType == 0)
             {
+             
                 float mul = 1f;//用来控制斜上距离
 
                 float z = 0;
