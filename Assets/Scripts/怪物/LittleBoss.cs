@@ -8,15 +8,17 @@ public class LittleBoss : MonoBehaviour
     private float spawnTimer = 0f;
     private float spawnInterval = 1f;
     float spawnRadius = 2.0f;
-    public GameObject mMyTarget = null;
+    public GameObject mMyTarget1 = null;
+    public GameObject mMyTarget2 = null;
     public float mChaseRange = 30f; // 追随范围
+    public AudioSource deathSound;
     //public GameObject littlePlane = null;
     // Start is called before the first frame update
     void Start()
     {
-        mMyTarget = GameObject.Find("hero");
-        Debug.Assert(mMyTarget != null);
-
+        mMyTarget1 = GameObject.Find("hero");
+        mMyTarget2 = GameObject.Find("bssheep");
+        deathSound = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -24,7 +26,8 @@ public class LittleBoss : MonoBehaviour
     {
         spawnTimer += Time.deltaTime;
         float fangshi = Random.value;
-        if (mMyTarget != null && Vector3.Distance(transform.position, mMyTarget.transform.position) <= mChaseRange)
+        if (Vector3.Distance(transform.position, mMyTarget1.transform.position) <= mChaseRange ||
+        Vector3.Distance(transform.position, mMyTarget2.transform.position) <= mChaseRange)
         {
             if (fangshi >= 0.5f)
                 luoxuanegg();
@@ -143,10 +146,12 @@ public class LittleBoss : MonoBehaviour
         if (other.gameObject.tag == "attack" /*&& (!IfLittlePlaneliving())*/)
         {
             mon3xueliang -= 4;
+            deathSound.Play();
         }
         else if (other.gameObject.tag == "playerBullet" /*&& (!IfLittlePlaneliving())*/)
         {
             mon3xueliang -= 1;
+            deathSound.Play();
         }
     }
 

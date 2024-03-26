@@ -10,10 +10,13 @@ public class PlayerAttack : MonoBehaviour
     public int AttackType = 0;// 0==defaultAttack
     public const float attackDisPlayer = 4.5f;//攻击与玩家的距离
     private PlayerManage PlayerManage;
-    private GameObject currentWeapon;
     private const float attackCoolTime = 0.2f;//每0.2f可攻击一次
     private float attackDisTime = 0.2f;//>0.2f才能攻击，否则不能
     private Shield Shield;
+    private float axeDis = 3f;
+    public float rotationSpeed = 450f;
+    private const float aXeCoolTime = 1.0f;
+    private float aXeDisTime = 1.0f;
     void Start()
     {
         getPlayerManage();
@@ -22,11 +25,21 @@ public class PlayerAttack : MonoBehaviour
    
     void Update()
     {
-        if(IfPlayerCanAttack())
+        changeWeapon();
+        if (IfPlayerCanAttack())
             Attack();
         attackTime();
     }
 
+    private void changeWeapon()
+    {
+        if(Input.GetKeyDown(KeyCode.O))
+        {
+            AttackType++;
+            if (AttackType == 2)
+                AttackType = 0;
+        }
+    }
     private bool IfisDefencing()
     {
         Shield = GetComponent<Shield>();
@@ -42,6 +55,8 @@ public class PlayerAttack : MonoBehaviour
     {
         if(attackDisTime <= attackCoolTime)
             attackDisTime += Time.deltaTime;
+        if (aXeDisTime <= aXeCoolTime)
+            aXeDisTime += Time.deltaTime;
     }
     private void Attack()
     {
@@ -98,14 +113,22 @@ public class PlayerAttack : MonoBehaviour
                 p.z += 2;
                 Instantiate(Resources.Load("Prefabs/deAttack") as GameObject, p, q);
             } 
+            else if(AttackType == 1 && aXeDisTime > aXeCoolTime)
+            {
+                Quaternion qqq = Quaternion.Euler(0, 0, 0);
+                Vector3 p = transform.position + transform.up * axeDis;
+                Instantiate(Resources.Load("Prefabs/deAxe") as GameObject,p,qqq);
+            }
             attackDisTime -= attackCoolTime;
+            if(aXeDisTime >= aXeCoolTime)
+                aXeDisTime -= aXeCoolTime;
         }
     }
     
     private bool IfPlayerCanAttack()
     {
         bool flag = true;
-        if (attackDisTime < 0.2f)
+        if (attackDisTime < attackCoolTime )
             flag = false;
         return flag;
     }

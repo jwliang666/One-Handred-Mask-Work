@@ -17,7 +17,7 @@ public class ShieldHalo : MonoBehaviour
     {
         Color startColor = Color.gray; // 初始颜色
         Color endColor = Color.white; // 最终颜色
-        float duration = 0.5f; // 变化持续时间
+        float duration = 0.3f; // 变化持续时间
 
         float timePassed = 0f;
         while (timePassed < duration)

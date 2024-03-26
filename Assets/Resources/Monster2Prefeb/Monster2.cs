@@ -9,26 +9,40 @@ public class Monster2 : MonoBehaviour
     //public GameObject hero; // 目标对象（比如英雄）
     public float launchInterval = 1f; // 发射间隔时间
     //public float speed = 10f; // 炸弹的速度
-    public Vector3 targetPosition;
+    public Vector3 targetPosition1;
+    public Vector3 targetPosition2;
     private GameObject hero;
+    private GameObject hero1;
     private float timer = 0f;
-
+    public AudioSource deathSound;
     //跟随范围
     public float MyChasingRange = 20f;
     void Start()
     {
         hero = GameObject.Find("hero");
+        hero1 = GameObject.Find("bssheep");
+        deathSound = GetComponent<AudioSource>();
     }
 
     void Update()
     {
         timer += Time.deltaTime;
-        targetPosition = hero.transform.position;
-        float mydistance = Vector3.Distance(targetPosition, transform.position);
-        Debug.Log(mydistance);
-        if (timer >= launchInterval && mydistance <= MyChasingRange)
+        targetPosition1 = hero.transform.position;
+        targetPosition2 = hero1.transform.position;
+
+        float mydistance1 = Vector3.Distance(targetPosition1, transform.position);
+        float mydistance2 = Vector3.Distance(targetPosition2, transform.position);
+
+        if (timer >= launchInterval && (mydistance1 <= MyChasingRange || mydistance2 <= MyChasingRange))
         {
-            LaunchBomb();
+            if (mydistance1 <= mydistance2)
+            {
+                LaunchBomb(targetPosition1);
+            }
+            else
+            {
+                LaunchBomb(targetPosition2);
+            }
             timer = 0f;
         }
 
@@ -42,7 +56,7 @@ public class Monster2 : MonoBehaviour
         }
     }
 
-    void LaunchBomb()
+    void LaunchBomb(Vector3 targetPosition)
     {
         if (hero == null)
         {
@@ -79,10 +93,12 @@ public class Monster2 : MonoBehaviour
         if (other.gameObject.tag == "attack")
         {
             mon2xueliang -= 4;
+            deathSound.Play();
         }
         else if (other.gameObject.tag == "playerBullet")
         {
             mon2xueliang -= 1;
+            deathSound.Play();
         }
     }
 
