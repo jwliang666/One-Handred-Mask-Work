@@ -13,8 +13,8 @@ GameObject:
   - component: {fileID: 4834427714770060074}
   - component: {fileID: 2085478445513584558}
   m_Layer: 0
-  m_Name: "\u7F8E\u7F8A\u7F8A"
-  m_TagString: Untagged
+  m_Name: BsSheep
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -100,6 +100,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   waypoints: []
   moveSpeed: 3
+  bssheephealth: 100
   myani: {fileID: 2085478445513584558}
 --- !u!95 &2085478445513584558
 Animator:
