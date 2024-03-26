@@ -7,8 +7,8 @@ public class healthbar : MonoBehaviour
 {
     public Image bloodBar; // 血条对象
     public float MaxHealth = 0.9f; // 最大生命值
-    public float CurrentHealth ; // 当前生命值
-    public  GameObject tar;
+    public float CurrentHealth; // 当前生命值
+    public GameObject tar;
     void Update()
     {
         UpdateHealthBar();
@@ -17,12 +17,12 @@ public class healthbar : MonoBehaviour
     void UpdateHealthBar()
     {
         tar = GameObject.Find("hero");
-        CurrentHealth=tar.GetComponent<PlayerMove>().UIsprintBar;
+        CurrentHealth = tar.GetComponent<heroInjured>().healthCnt;
         float healthPercent = CurrentHealth / MaxHealth;
         bloodBar.fillAmount = healthPercent;
     }
 
-   
 
-    
+
+
 }
