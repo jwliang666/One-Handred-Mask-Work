@@ -5,10 +5,10 @@ using UnityEngine.Lumin;
 
 public class PlayerMove : MonoBehaviour
 {
-    public float mHeroSpeed = 13f;//人物移动速度
+    public float mHeroSpeed = 10f;//人物移动速度
     public float coolDownSprintTime = 0.9f;//冲刺条满能量 说是能量其实是1.8s，1s对应1单位能量
     public float currentCoolDownSprintTime = 0.9f;//当前冲刺条能量
-    private float sprintMul = 2.4f;
+    private float sprintMul = 2.2f;
     public Vector3 currentRotation = new Vector3(1, 0, 0);//朝向,只能上下左右朝向
     public Animator myani;
     private Rigidbody2D rb;
