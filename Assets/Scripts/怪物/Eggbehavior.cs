@@ -54,6 +54,9 @@ public class EggBehavior : MonoBehaviour
     {
         if (collision.tag == "Player" || collision.tag == "Wall")
         {
+            Vector3 BOMBp = transform.position;
+            Quaternion qq = Quaternion.Euler(0, 0, 0);
+            Instantiate(Resources.Load("Prefabs/Purple") as GameObject, BOMBp, qq);
             Destroy(transform.gameObject);
         }
     }
