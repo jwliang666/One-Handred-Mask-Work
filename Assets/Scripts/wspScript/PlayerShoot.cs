@@ -13,9 +13,11 @@ public class PlayerShoot : MonoBehaviour
     private const float ShootCoolTime = 0.2f;//每0.2f可攻击一次
     private float ShootDisTime = 0.2f;//>0.2f才能攻击，否则不能
     private Shield Shield;
+    public AudioSource shootSound;//子弹发射声音
     void Start()
     {
         getPlayerManage();
+        shootSound = GetComponent<AudioSource>();
     }
 
 
@@ -95,6 +97,7 @@ public class PlayerShoot : MonoBehaviour
                 Instantiate(Resources.Load("Prefabs/deShoot") as GameObject, p, q1);
                 Instantiate(Resources.Load("Prefabs/deShoot") as GameObject, p, q2);
 
+                shootSound.Play();
             }
             ShootDisTime -= ShootCoolTime;
         }
