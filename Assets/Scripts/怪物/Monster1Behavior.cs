@@ -5,7 +5,8 @@ using UnityEngine;
 public class Monster1 : MonoBehaviour
 {
     public int mon1xueliang = 6;
-    public GameObject mMyTarget = null;
+    public GameObject mMyTarget1 = null;
+    public GameObject mMyTarget2 = null;
     public float mTurnRate = 0.05f;
     public float mChaseRange = 10f; // 追随范围
     private const float kMySpeed = 5f;
@@ -14,15 +15,25 @@ public class Monster1 : MonoBehaviour
     void Start()
     {
         getMytarget();
-        Debug.Assert(mMyTarget != null);
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (mMyTarget != null && Vector3.Distance(transform.position, mMyTarget.transform.position) <= mChaseRange)
+        float mudistance1 = Vector3.Distance(transform.position, mMyTarget1.transform.position);
+        float mudistance2 = Vector3.Distance(transform.position, mMyTarget2.transform.position);
+
+        if (mudistance1 <= mChaseRange || mudistance2 <= mChaseRange)
         {
-            PointAtPosition(mMyTarget.transform.position, mTurnRate * Time.smoothDeltaTime);
+            if (mudistance1 <= mudistance2)
+            {
+                PointAtPosition(mMyTarget1.transform.position, mTurnRate * Time.smoothDeltaTime);
+
+            }
+            else
+            {
+                PointAtPosition(mMyTarget2.transform.position, mTurnRate * Time.smoothDeltaTime);
+            }
             transform.position += kMySpeed * Time.smoothDeltaTime * transform.up;
         }
 
@@ -38,7 +49,8 @@ public class Monster1 : MonoBehaviour
 
     private void getMytarget()
     {
-        mMyTarget = GameObject.Find("hero");
+        mMyTarget1 = GameObject.Find("hero");
+        mMyTarget2 = GameObject.Find("bssheep");
     }
 
     private void PointAtPosition(Vector3 p, float r)
