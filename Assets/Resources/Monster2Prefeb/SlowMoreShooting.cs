@@ -8,9 +8,11 @@ public class SlowMoreShooting : MonoBehaviour
     public GameObject bombPrefab; // 需要在Unity编辑器中指定的炸弹预制体
     //public GameObject hero; // 目标对象（比如英雄）
     public float launchInterval = 0.3f; // 发射间隔时间
-    //public float speed = 3f; // 炸弹的速度
-    public Vector3 targetPosition;
+                                        //public float speed = 3f; // 炸弹的速度
+    public Vector3 targetPosition1;
+    public Vector3 targetPosition2;
     private GameObject hero;
+    private GameObject hero1;
     private float timer = 0f;
 
     //跟随范围
@@ -18,16 +20,28 @@ public class SlowMoreShooting : MonoBehaviour
     void Start()
     {
         hero = GameObject.Find("hero");
+        hero1 = GameObject.Find("bssheep");
     }
 
     void Update()
     {
         timer += Time.deltaTime;
-        targetPosition = hero.transform.position;
-        float mydistance = Vector3.Distance(targetPosition, transform.position);
-        if (timer >= launchInterval && mydistance <= MyChasingRange)
+        targetPosition1 = hero.transform.position;
+        targetPosition2 = hero1.transform.position;
+
+        float mydistance1 = Vector3.Distance(targetPosition1, transform.position);
+        float mydistance2 = Vector3.Distance(targetPosition2, transform.position);
+
+        if (timer >= launchInterval && (mydistance1 <= MyChasingRange || mydistance2 <= MyChasingRange))
         {
-            LaunchBomb();
+            if (mydistance1 <= mydistance2)
+            {
+                LaunchBomb(targetPosition1);
+            }
+            else
+            {
+                LaunchBomb(targetPosition2);
+            }
             timer = 0f;
         }
 
@@ -41,7 +55,7 @@ public class SlowMoreShooting : MonoBehaviour
         }
     }
 
-    void LaunchBomb()
+    void LaunchBomb(Vector3 targetPosition)
     {
         if (hero == null)
         {

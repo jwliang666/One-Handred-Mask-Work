@@ -33,16 +33,16 @@ public class Shield : MonoBehaviour
                 Instantiate(Resources.Load("Prefabs/ShieldHalo") as GameObject, transform);
             delayTimeCnt += Time.deltaTime;
         }
-        if (Input.GetKey(KeyCode.Space) && !isDefencing && delayTimeCnt > 0.5f)
+        if (Input.GetKey(KeyCode.Space) && !isDefencing && delayTimeCnt > 0.3f)
         {
             PlayerMove.mHeroSpeed *= 0.1f;
-            boxCollider2D.size *= new Vector2(2.3f, 2.3f);
+            boxCollider2D.size *= new Vector2(2.6f, 2.6f);
             isDefencing = true; // 标记空格键被按下
         }
         else if (!Input.GetKey(KeyCode.Space) && isDefencing)
         {
             PlayerMove.mHeroSpeed *= 10f;
-            boxCollider2D.size /= new Vector2(2.3f, 2.3f);
+            boxCollider2D.size /= new Vector2(2.6f, 2.6f);
             isDefencing = false; // 标记空格键松开
             delayTimeCnt = 0f;
         }
