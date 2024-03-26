@@ -151,6 +151,7 @@ public class LittleBoss : MonoBehaviour
         else if (other.gameObject.tag == "playerBullet" /*&& (!IfLittlePlaneliving())*/)
         {
             mon3xueliang -= 1;
+            deathSound.Play();
         }
     }
 
