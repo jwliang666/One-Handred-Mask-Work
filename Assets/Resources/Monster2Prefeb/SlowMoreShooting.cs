@@ -14,13 +14,14 @@ public class SlowMoreShooting : MonoBehaviour
     private GameObject hero;
     private GameObject hero1;
     private float timer = 0f;
-
+    public AudioSource deathSound;
     //跟随范围
     public float MyChasingRange = 20f;
     void Start()
     {
         hero = GameObject.Find("hero");
         hero1 = GameObject.Find("bssheep");
+        deathSound = GetComponent<AudioSource>();
     }
 
     void Update()
@@ -91,10 +92,12 @@ public class SlowMoreShooting : MonoBehaviour
         if (other.gameObject.tag == "attack")
         {
             mon2xueliang -= 4;
+            deathSound.Play();
         }
         else if (other.gameObject.tag == "playerBullet")
         {
             mon2xueliang -= 1;
+            deathSound.Play();
         }
     }
 
