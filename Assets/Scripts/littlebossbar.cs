@@ -18,7 +18,7 @@ public class littlebossbar : MonoBehaviour
     void Update()
     {
         LateUpdate();
-        slider.value = mon1.mon3xueliang / 12;
+        slider.value = mon1.mon3xueliang / 12f;
     }
 
     void LateUpdate()

@@ -18,7 +18,7 @@ public class redbar : MonoBehaviour
     void Update()
     {
         LateUpdate();
-        slider.value = mon1.mon2xueliang / 8;
+        slider.value = mon1.mon2xueliang / 8f;
     }
 
     void LateUpdate()
