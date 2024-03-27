@@ -90,6 +90,20 @@ public class Monster1 : MonoBehaviour
         }
 
     }
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.tag == "attack")
+        {
+            mon1xueliang -= 4;
+            deathSound.Play();
+        }
+        else if (collision.gameObject.tag == "playerBullet")
+        {
+            mon1xueliang -= 1;
+            deathSound.Play();
+        }
+    }
+
     private void cntjian()
     {
         monsterCnt a = GetComponent<monsterCnt>();
