@@ -368,6 +368,10 @@ PrefabInstance:
       propertyPath: m_Mass
       value: 10000
       objectReference: {fileID: 0}
+    - target: {fileID: 1494491450148881375, guid: c140a6b7928e3c14eb20a11fc8dcff20, type: 3}
+      propertyPath: m_Constraints
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 1876842799054818085, guid: c140a6b7928e3c14eb20a11fc8dcff20, type: 3}
       propertyPath: m_LocalPosition.x
       value: -69.262856

@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 207637985254936300}
   - component: {fileID: 8794081402295970307}
   - component: {fileID: 3619597312584516817}
+  - component: {fileID: -4463098639958938144}
   m_Layer: 0
   m_Name: bssheep
   m_TagString: Player
@@ -201,3 +202,17 @@ CapsuleCollider2D:
   m_Offset: {x: -0.15833333, y: -0.1775}
   m_Size: {x: 0.4, y: 0.4}
   m_Direction: 0
+--- !u!114 &-4463098639958938144
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9140951675155601865}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 348bd94061fa9c642b733f36fe07ccec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  circleDistance: 20
+  bornDisTime: 5

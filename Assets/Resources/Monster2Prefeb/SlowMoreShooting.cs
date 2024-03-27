@@ -7,20 +7,21 @@ public class SlowMoreShooting : MonoBehaviour
     public int mon2xueliang = 8;
     public GameObject bombPrefab; // 需要在Unity编辑器中指定的炸弹预制体
     //public GameObject hero; // 目标对象（比如英雄）
-    public float launchInterval = 0.3f; // 发射间隔时间
+    public float launchInterval = 0.8f; // 发射间隔时间
                                         //public float speed = 3f; // 炸弹的速度
     public Vector3 targetPosition1;
     public Vector3 targetPosition2;
     private GameObject hero;
     private GameObject hero1;
     private float timer = 0f;
-
+    public AudioSource deathSound;
     //跟随范围
     public float MyChasingRange = 20f;
     void Start()
     {
         hero = GameObject.Find("hero");
         hero1 = GameObject.Find("bssheep");
+        deathSound = GetComponent<AudioSource>();
     }
 
     void Update()
@@ -47,11 +48,16 @@ public class SlowMoreShooting : MonoBehaviour
 
         if (mon2xueliang <= 0)
         {
-            cntjian();
+
             Vector3 BOMBp = transform.position;
             Quaternion qq = Quaternion.Euler(0, 0, 0);
             Instantiate(Resources.Load("Prefabs/smallMonsterDead") as GameObject, BOMBp, qq);
-            Destroy(gameObject);
+            if (!deathSound.isPlaying)
+            {
+                cntjian();
+                Destroy(gameObject);
+            }
+            //Destroy(gameObject);
         }
     }
 
@@ -91,10 +97,12 @@ public class SlowMoreShooting : MonoBehaviour
         if (other.gameObject.tag == "attack")
         {
             mon2xueliang -= 4;
+            deathSound.Play();
         }
         else if (other.gameObject.tag == "playerBullet")
         {
             mon2xueliang -= 1;
+            deathSound.Play();
         }
     }
 

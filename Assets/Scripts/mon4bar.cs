@@ -18,7 +18,7 @@ public class mon4bar : MonoBehaviour
     void Update()
     {
         LateUpdate();
-        slider.value = mon1.mon4xueliang / 6;
+        SetHealth(mon1.mon4xueliang / 6f);
     }
 
     void LateUpdate()

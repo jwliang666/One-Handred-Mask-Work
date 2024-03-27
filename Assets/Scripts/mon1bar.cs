@@ -18,7 +18,7 @@ public class HealthBar : MonoBehaviour
     void Update()
     {
         LateUpdate();
-        slider.value = mon1.mon1xueliang / 8;
+        slider.value = mon1.mon1xueliang / 6f;
     }
 
     void LateUpdate()

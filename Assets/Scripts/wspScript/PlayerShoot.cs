@@ -49,7 +49,7 @@ public class PlayerShoot : MonoBehaviour
     private void Shoot()
     {
 
-        if (Input.GetKeyDown(KeyCode.K) && !IfisDefencing())
+        if (Input.GetKeyDown(KeyCode.K))
         {
             if (ShootType == 0)
             {

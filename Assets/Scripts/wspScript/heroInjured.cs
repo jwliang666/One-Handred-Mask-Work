@@ -37,7 +37,7 @@ public class heroInjured : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        
+
         string Tag = collision.gameObject.tag;
         if (!IfisDefencing())
         {
@@ -46,6 +46,10 @@ public class heroInjured : MonoBehaviour
                 healthCnt -= 15;
             }
 
+            if (Tag == "Enemy")
+            {
+                healthCnt -= 15;
+            }
         }
     }
 

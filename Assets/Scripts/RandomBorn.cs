@@ -16,7 +16,7 @@ public class RandomBorn : MonoBehaviour
     {
         refreshTimeBorn();
     }
-    
+
     private void refreshTimeBorn()
     {
 
@@ -33,7 +33,7 @@ public class RandomBorn : MonoBehaviour
         Vector3 p = transform.position;
         Vector3 randomPoint = GenerateRandomPointOnCircle(p, circleDistance);
         Quaternion q = Quaternion.Euler(0, 0, 0);
-        Instantiate(Resources.Load("Prefabs/enemyBird") as GameObject, randomPoint, q);
+        Instantiate(Resources.Load("Prefabs/Enemybird 1") as GameObject, randomPoint, q);
     }
     Vector3 GenerateRandomPointOnCircle(Vector3 center, float radius)
     {
