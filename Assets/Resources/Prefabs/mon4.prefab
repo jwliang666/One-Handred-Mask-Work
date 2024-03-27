@@ -186,7 +186,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mon4xueliang: 5
-  OrbitRadius: 3
+  OrbitRadius: 1
   OrbitSpeed: 36
   HostXform: {fileID: 360772844146082966, guid: f5efe6d528f93fe4d894e96b2848fdbe, type: 3}
   deathSound: {fileID: 0}

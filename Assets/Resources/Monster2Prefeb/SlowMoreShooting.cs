@@ -7,7 +7,7 @@ public class SlowMoreShooting : MonoBehaviour
     public int mon2xueliang = 8;
     public GameObject bombPrefab; // 需要在Unity编辑器中指定的炸弹预制体
     //public GameObject hero; // 目标对象（比如英雄）
-    public float launchInterval = 0.3f; // 发射间隔时间
+    public float launchInterval = 0.5f; // 发射间隔时间
                                         //public float speed = 3f; // 炸弹的速度
     public Vector3 targetPosition1;
     public Vector3 targetPosition2;
@@ -48,7 +48,7 @@ public class SlowMoreShooting : MonoBehaviour
 
         if (mon2xueliang <= 0)
         {
-            
+
             Vector3 BOMBp = transform.position;
             Quaternion qq = Quaternion.Euler(0, 0, 0);
             Instantiate(Resources.Load("Prefabs/smallMonsterDead") as GameObject, BOMBp, qq);
