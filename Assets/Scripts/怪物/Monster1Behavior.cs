@@ -11,7 +11,7 @@ public class Monster1 : MonoBehaviour
     public GameObject mMyTarget2 = null;
     public float mTurnRate = 1f;
     public float mChaseRange = 15f; // 追随范围
-    private const float kMySpeed = 5f;
+    public float kMySpeed = 4f;
     public AudioSource deathSound;
 
     // Start is called before the first frame update
@@ -75,6 +75,20 @@ public class Monster1 : MonoBehaviour
             mon1xueliang -= 1;
             deathSound.Play();
         }
+    }
+    void OnTriggerStay2D(Collider2D other)
+    {
+        if (other.gameObject.tag == "attack")
+        {
+            mon1xueliang -= 4;
+            deathSound.Play();
+        }
+        else if (other.gameObject.tag == "playerBullet")
+        {
+            mon1xueliang -= 1;
+            deathSound.Play();
+        }
+
     }
     private void cntjian()
     {
