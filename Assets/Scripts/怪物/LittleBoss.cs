@@ -6,7 +6,7 @@ public class LittleBoss : MonoBehaviour
 {
     public int mon3xueliang = 12;
     private float spawnTimer = 0f;
-    private float spawnInterval = 1f;
+    private float spawnInterval = 2f;
     float spawnRadius = 2.0f;
     public GameObject mMyTarget1 = null;
     public GameObject mMyTarget2 = null;
@@ -49,13 +49,13 @@ public class LittleBoss : MonoBehaviour
     {
         if (spawnTimer >= spawnInterval)
         {
-            spawnTimer = 0f;
+            spawnTimer = -2f;
 
             // 定义生成蛋的半径
-            float spawnRadius = 2.0f; // 可以根据需要调整生成的蛋围绕的半径
+            float spawnRadius = 1.0f; // 可以根据需要调整生成的蛋围绕的半径
 
             // 设置要生成蛋的数量
-            int eggCount = 24; // 这里假设生成8个蛋，你可以根据需要调整数量
+            int eggCount = 20; // 这里假设生成8个蛋，你可以根据需要调整数量
 
             // 计算每个蛋之间的角度间隔
             float angleInterval = 360f / eggCount;

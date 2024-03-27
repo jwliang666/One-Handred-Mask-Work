@@ -17,9 +17,13 @@ public class PlayerAttack : MonoBehaviour
     public float rotationSpeed = 450f;
     private const float aXeCoolTime = 1.0f;
     private float aXeDisTime = 1.0f;
+    public AudioSource attackSound1;//剑音效
+    public AudioSource attackSound2;//斧头音效
+    /// </summary>
     void Start()
     {
         getPlayerManage();
+        //attackSound = GetComponent<AudioSource>();
     }
 
    
@@ -112,12 +116,14 @@ public class PlayerAttack : MonoBehaviour
                 p += PlayerManage.getCurrentPlayerRotation().y * PlayerManage.getCurrentPlayerSize().y * transform.up * PlayerAttack.attackDisPlayer * mul;
                 p.z += 2;
                 Instantiate(Resources.Load("Prefabs/deAttack") as GameObject, p, q);
+                attackSound1.Play();
             } 
             else if(AttackType == 1 && aXeDisTime > aXeCoolTime)
             {
                 Quaternion qqq = Quaternion.Euler(0, 0, 0);
                 Vector3 p = transform.position + transform.up * axeDis;
                 Instantiate(Resources.Load("Prefabs/deAxe") as GameObject,p,qqq);
+                attackSound2.Play();
             }
             attackDisTime -= attackCoolTime;
             if(aXeDisTime >= aXeCoolTime)
