@@ -8,7 +8,7 @@ public class Dialouge0skip : MonoBehaviour
     // 跳转到指定场景
     public void Dialouge0skipbyname(string sceneName)
     {
-        SceneManager.LoadScene("firstDemo");
+        SceneManager.LoadScene("map1");
     }
 
     
