@@ -50,12 +50,12 @@ public class SceneController : MonoBehaviour
     void LoadNextScene()
     {
         // 加载下一个场景，这里用的是Unity的方式，具体实现取决于你的游戏引擎
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 2);
     }
 
     void LoadNextNextScene()
     {
         // 加载下一个场景，这里用的是Unity的方式，具体实现取决于你的游戏引擎
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 5);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 }

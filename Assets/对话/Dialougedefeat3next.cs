@@ -8,6 +8,6 @@ public class Dialougedefeat3 : MonoBehaviour
     // Start is called before the first frame update
     public void Dialougedefeat3next()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 11);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 12);
     }
 }
