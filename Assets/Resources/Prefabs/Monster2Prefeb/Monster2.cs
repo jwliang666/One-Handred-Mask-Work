@@ -52,12 +52,8 @@ public class Monster2 : MonoBehaviour
             Vector3 BOMBp = transform.position;
             Quaternion qq = Quaternion.Euler(0, 0, 0);
             Instantiate(Resources.Load("Prefabs/smallMonsterDead") as GameObject, BOMBp, qq);
-            if (!deathSound.isPlaying)
-            {
-                cntjian();
-                Destroy(gameObject);
-            }
-
+            cntjian();
+            Destroy(gameObject);
         }
     }
 

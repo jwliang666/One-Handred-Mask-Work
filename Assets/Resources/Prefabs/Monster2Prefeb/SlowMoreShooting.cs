@@ -52,12 +52,7 @@ public class SlowMoreShooting : MonoBehaviour
             Vector3 BOMBp = transform.position;
             Quaternion qq = Quaternion.Euler(0, 0, 0);
             Instantiate(Resources.Load("Prefabs/smallMonsterDead") as GameObject, BOMBp, qq);
-            if (!deathSound.isPlaying)
-            {
-                cntjian();
-                Destroy(gameObject);
-            }
-            //Destroy(gameObject);
+            Destroy(gameObject);
         }
     }
 
@@ -101,7 +96,7 @@ public class SlowMoreShooting : MonoBehaviour
         }
         else if (other.gameObject.tag == "playerBullet")
         {
-            mon2xueliang -= 1;
+            mon2xueliang -= 2;
             deathSound.Play();
         }
     }

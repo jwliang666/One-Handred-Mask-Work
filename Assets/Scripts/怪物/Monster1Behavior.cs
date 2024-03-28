@@ -72,7 +72,7 @@ public class Monster1 : MonoBehaviour
         }
         else if (other.gameObject.tag == "playerBullet")
         {
-            mon1xueliang -= 1;
+            mon1xueliang -= 2;
             deathSound.Play();
         }
     }
@@ -85,7 +85,7 @@ public class Monster1 : MonoBehaviour
         }
         else if (other.gameObject.tag == "playerBullet")
         {
-            mon1xueliang -= 1;
+            mon1xueliang -= 2;
             deathSound.Play();
         }
 
@@ -99,7 +99,7 @@ public class Monster1 : MonoBehaviour
         }
         else if (collision.gameObject.tag == "playerBullet")
         {
-            mon1xueliang -= 1;
+            mon1xueliang -= 2;
             deathSound.Play();
         }
     }

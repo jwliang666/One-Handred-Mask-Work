@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 3619597312584516817}
   - component: {fileID: -4463098639958938144}
   m_Layer: 0
-  m_Name: bssheep
+  m_Name: BsSheep
   m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -116,7 +116,7 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
-  moveSpeed: 2
+  moveSpeed: 3.2
   bssheephealth: 100
   myani: {fileID: 207637985254936300}
 --- !u!95 &207637985254936300
