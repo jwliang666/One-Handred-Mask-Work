@@ -30,8 +30,8 @@ EditorBuildSettings:
     path: Assets/scene/Dialouge4.unity
     guid: 69e71dd7069215b41a2d0c0330d17e5c
   - enabled: 1
-    path: Assets/scene/firstDemo.unity
-    guid: 7b9c762e4867718438c7ba2a81ab7a4a
+    path: Assets/scene/map1.unity
+    guid: e14f7a5017f83c940b192df510824f10
   - enabled: 1
     path: Assets/scene/Dialouge defeat0.unity
     guid: 342560189a9f44f4ca3098f42d7f77bf
