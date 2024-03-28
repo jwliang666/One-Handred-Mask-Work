@@ -101,7 +101,7 @@ public class SlowMoreShooting : MonoBehaviour
         }
         else if (other.gameObject.tag == "playerBullet")
         {
-            mon2xueliang -= 1;
+            mon2xueliang -= 2;
             deathSound.Play();
         }
     }

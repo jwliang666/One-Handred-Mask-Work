@@ -27,10 +27,10 @@ public class bleedBottle : MonoBehaviour
     {
         if (collision.tag == "Player")
         {
-            heroInjured.healthCnt += 400;
+            heroInjured.healthCnt += 200;
             if (heroInjured.healthCnt > 500)
                 heroInjured.healthCnt = 500;
-            bsheep.bssheephealth += 400;
+            bsheep.bssheephealth += 200;
             if (bsheep.bssheephealth > 500)
                 bsheep.bssheephealth = 500;
 

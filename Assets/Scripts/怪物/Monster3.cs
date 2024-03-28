@@ -155,7 +155,7 @@ public class Monster3 : MonoBehaviour
         }
         else if (other.gameObject.tag == "playerBullet" && (!IfLittlePlaneliving()))
         {
-            mon3xueliang -= 1;
+            mon3xueliang -= 2;
             deathSound.Play();
         }
     }

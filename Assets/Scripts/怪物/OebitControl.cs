@@ -48,7 +48,7 @@ public class OrbitControl : MonoBehaviour
         }
         else if (other.gameObject.tag == "playerBullet")
         {
-            mon4xueliang -= 1;
+            mon4xueliang -= 2;
             deathSound.Play();
         }
     }
