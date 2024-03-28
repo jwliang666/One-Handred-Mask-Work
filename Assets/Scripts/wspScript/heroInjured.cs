@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class heroInjured : MonoBehaviour
 {
-    public int healthCnt = 500;
+    public int healthCnt = 300;
     private Shield Shield;
     void Start()
     {

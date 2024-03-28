@@ -10,7 +10,7 @@ public class bsheep : MonoBehaviour
 
   private int currentWaypointIndex = 0; // 当前路径点索引
 
-  public int bssheephealth = 100;
+  public int bssheephealth = 300;
   public Animator myani;
   void Start()
   {
