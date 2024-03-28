@@ -104,4 +104,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/scene/dia vic 18.unity
     guid: b2ba5a459c0b1ed4a90da0c97e5f96f2
+  - enabled: 1
+    path: Assets/scene/Video.unity
+    guid: 16e5969f666fe3d4e845212bb8f73a34
   m_configObjects: {}

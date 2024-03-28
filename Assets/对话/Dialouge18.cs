@@ -8,6 +8,6 @@ public class Dialougevictory18 : MonoBehaviour
     // Start is called before the first frame update
     public void Dialougevictory18next()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 30);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 }
